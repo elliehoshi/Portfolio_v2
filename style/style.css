@@ -11,7 +11,18 @@ body {
   overflow: auto;
   background-image: url(http://placekitten.com/g/800/800);
   width: 100%;
-  height: 800px;
+  height: 100%;
   border: 5px solid red;
-  margin: 0 auto;
+}
+
+#works {
+  background-color: red;
+}
+
+#about {
+  background-color: green;
+}
+
+#contact {
+  background-color: cyan;
 }
