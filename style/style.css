@@ -19,12 +19,22 @@ body {
   padding-top: 15%;
 }
 
+#movement1 {
+  position: absolute;
+  border: 5px solid gold;
+  background-image: url(http://placekitten.com/g/300/300);
+  height: 300px;
+  width: 300px;
+}
+
 #introText {
   font-size: 4em;
+  z-index: 3;
 }
 
 #introDescription {
-  font-size: 2em;
+  font-size: 1.5em;
+  margin-bottom: 1em;
 }
 
 #cta {
@@ -36,6 +46,12 @@ body {
   cursor: pointer;
 }
 
+.spacer {
+  background-color: white;
+  height: 2px;
+  width: 100px;
+  margin: 0 auto;
+}
 
 #works {
   background-color: red;
