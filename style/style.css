@@ -1,0 +1,17 @@
+/*-----------------------------------------
+Body
+-----------------------------------------*/
+body {
+  text-align: center;
+  color: gold;
+}
+
+
+#landing-content {
+  overflow: auto;
+  background-image: url(http://placekitten.com/g/800/800);
+  width: 100%;
+  height: 800px;
+  border: 5px solid red;
+  margin: 0 auto;
+}
