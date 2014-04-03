@@ -5,7 +5,7 @@ Body
 -----------------------------------------*/
 body {
   text-align: center;
-  color: gold;
+  color: rgba(106, 106, 106, 1);
   font-family: 'Lato', sans-serif;
 }
 
@@ -28,8 +28,13 @@ body {
 }
 
 #introText {
+  z-index: 999;
+  /*fix this*/
+}
+
+#introName {
   font-size: 4em;
-  z-index: 3;
+  color: rgba(162, 213, 213, 1);
 }
 
 #introDescription {
@@ -44,6 +49,7 @@ body {
   margin: 0 auto;
   padding-top: 20px;
   cursor: pointer;
+  color: rgba(162, 213, 213, 1);
 }
 
 .spacer {
@@ -54,13 +60,16 @@ body {
 }
 
 #works {
-  background-color: red;
+  background-color: rgba(245,245,245,1);
+  border: 20px solid rgba(162, 213, 213, 1);
 }
 
 #about {
-  background-color: green;
+  background-color: rgba(245,245,245,1);
+  border: 20px solid rgba(162, 213, 213, 1);
 }
 
 #contact {
-  background-color: cyan;
+  background-color: rgba(245,245,245,1);
+  border: 20px solid rgba(162, 213, 213, 1);
 }
