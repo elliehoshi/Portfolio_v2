@@ -9,22 +9,29 @@ body {
   font-family: 'Lato', sans-serif;
 }
 
+#blackBackdrop {
+  background-color: black;
+  width: 100%;
+  height: 100%;
+}
 
 #landing-content {
   overflow: auto;
-  background-image: url(http://placekitten.com/g/800/800);
+  background-image: url(../img/fractal1_fill.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
   width: 100%;
   height: 100%;
-  border: 5px solid red;
   padding-top: 15%;
 }
 
 #movement1 {
   position: absolute;
-  border: 5px solid gold;
-  background-image: url(http://placekitten.com/g/300/300);
-  height: 300px;
-  width: 300px;
+  background-image: url(../img/fractal2_fill.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 1200px;
+  width: 800px;
 }
 
 #introText {
@@ -52,8 +59,13 @@ body {
   color: rgba(162, 213, 213, 1);
 }
 
+#cta:hover {
+  background-color: rgba(162, 213, 213, 1);
+  color: white;
+}
+
 .spacer {
-  background-color: white;
+  background-color: rgba(162, 213, 213, 1);;
   height: 2px;
   width: 100px;
   margin: 0 auto;
@@ -61,15 +73,12 @@ body {
 
 #works {
   background-color: rgba(245,245,245,1);
-  border: 20px solid rgba(162, 213, 213, 1);
 }
 
 #about {
   background-color: rgba(245,245,245,1);
-  border: 20px solid rgba(162, 213, 213, 1);
 }
 
 #contact {
   background-color: rgba(245,245,245,1);
-  border: 20px solid rgba(162, 213, 213, 1);
 }
