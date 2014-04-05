@@ -10,7 +10,7 @@ body {
 }
 
 #blackBackdrop {
-  background-color: black;
+  background-image: url(../img/subtle_carbon.png);
   width: 100%;
   height: 100%;
 }
@@ -27,7 +27,7 @@ body {
 
 #movement1 {
   position: absolute;
-  background-image: url(../img/fractal2_fill.svg);
+  background-image: url(../img/fractal3_fill.svg);
   background-size: contain;
   background-repeat: no-repeat;
   height: 1200px;

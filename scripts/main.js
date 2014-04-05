@@ -12,9 +12,8 @@ $(document).ready(function() {
 
   // For Parallax Box1 with Cursor Movement
   $('#landing-content').mousemove(function(e){
-    var amountMovedX = (e.pageX * 1 / 3);
-    var amountMovedY = (e.pageY * 1 / 3);
-    $('#movement1').css('background-position', amountMovedX + 'px ' + amountMovedY + 'px');
+    var amountMovedX = (e.pageX * 1 / 4);
+    var amountMovedY = (e.pageY * 1 / 4);
     $('#movement1').css('left', amountMovedX);
     $('#movement1').css('top', amountMovedY);
   });
