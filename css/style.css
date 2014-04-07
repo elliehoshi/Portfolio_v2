@@ -57,13 +57,13 @@ body {
 }
 
 #introName {
-  font-size: 5em;
+  font-size: 6em;
   color: rgba(162, 213, 213, 1);
   font-family: 'Josefin Sans', sans-serif;
 }
 
 #introDescription {
-  font-size: 1.5em;
+  font-size: 2em;
   font-family: 'Josefin Sans', sans-serif;
   color: rgba(106, 106, 106, 1);
   /*margin-bottom: 1em;*/
@@ -105,8 +105,15 @@ Portfolio
   color: rgba(106, 106, 106, 1);
 }
 
-#portfolio {
+.portfolioGrid {
+  /*width: 90%;*/
+  margin: 0 auto;
+}
 
+.portfolio {
+  height: 10%;
+  margin: 4%;
+  border: 1px solid orange;
 }
 
 /*-----------------------------------------
@@ -121,10 +128,25 @@ About
 }
 
 #aboutDescription {
-  font-size: 1.5em;
+  font-size: 18pt;
   text-align: left;
   font-family: 'Josefin Sans', sans-serif;
   color: rgba(106, 106, 106, 1);
+}
+
+/*-----------------------------------------
+Skills
+-----------------------------------------*/
+
+.skillGrid {
+  /*width: 90%;*/
+  margin: 0 auto;
+}
+
+.skillBar {
+  height: 10%;
+  margin: 4%;
+  border: 1px solid orange;
 }
 
 /*-----------------------------------------
@@ -133,4 +155,11 @@ Contact
 #contactInfo {
   font-size: 18pt;
   text-align: left;
+}
+
+.socialIcons {
+  height: 30px;
+  width: 30px;
+  border: 1px solid orange;
+  display: inline-block;
 }
