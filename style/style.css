@@ -6,7 +6,7 @@ Body
 body {
   text-align: center;
   color: rgba(106, 106, 106, 1);
-  font-family: 'Lato', sans-serif;
+  font-family: 'Josefin Sans', sans-serif;
 }
 
 #blackBackdrop {
@@ -16,52 +16,51 @@ body {
 }
 
 #landing-content {
-  overflow: auto;
+  position: absolute;
+  top: 0;
+  /*overflow: auto;*/
   background-image: url(../img/fractal1_fill.svg);
+  opacity: .4;
   background-size: contain;
   background-repeat: no-repeat;
   width: 100%;
   height: 100%;
-  padding-top: 15%;
 }
 
-#movement1 {
+#movement2 {
+  position: absolute;
+  background-image: url(../img/fractal2_fill.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  /*border: 2px solid white;*/
+  height: 1200px;
+  width: 800px;
+  top: 0;
+  right: 0;
+}
+
+#movement3 {
   position: absolute;
   background-image: url(../img/fractal3_fill.svg);
   background-size: contain;
   background-repeat: no-repeat;
-  height: 1200px;
-  width: 800px;
+  /*border: 2px solid white;*/
+  height: 800px;
+  width: 1200px;
 }
 
 #introText {
-  z-index: 999;
-  /*fix this*/
+  padding-top: 15%;
 }
 
 #introName {
-  font-size: 4em;
+  font-size: 5em;
   color: rgba(162, 213, 213, 1);
 }
 
 #introDescription {
   font-size: 1.5em;
-  margin-bottom: 1em;
-}
-
-#cta {
-  width: 200px;
-  height: 38px;
-  border: 2px solid white;
-  margin: 0 auto;
-  padding-top: 20px;
-  cursor: pointer;
-  color: rgba(162, 213, 213, 1);
-}
-
-#cta:hover {
-  background-color: rgba(162, 213, 213, 1);
-  color: white;
+  /*margin-bottom: 1em;*/
 }
 
 .spacer {
@@ -81,4 +80,34 @@ body {
 
 #contact {
   background-color: rgba(245,245,245,1);
+}
+
+/*-----------------------------------------
+About
+-----------------------------------------*/
+
+#aboutContent {
+  width: 90%;
+  height: 40%;
+  overflow: auto;
+  border: 1px solid black;
+  margin: 0 auto;
+}
+
+#elliePhoto {
+  width: 30%;
+  border: 3px solid orange;
+  display: inline-block;
+}
+
+#elliePhoto img {
+  height: 100%;
+  width: 100%;
+}
+
+#aboutDescription {
+  width: 60%;
+  border: 3px solid orange;
+  display: inline-block;
+  text-align: left;
 }
