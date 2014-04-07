@@ -106,14 +106,26 @@ Portfolio
 }
 
 .portfolioGrid {
-  /*width: 90%;*/
+  width: 225px;
+  height: 110px;
   margin: 0 auto;
+  /*border: 1px solid orange;*/
 }
 
-.portfolio {
-  height: 10%;
-  margin: 4%;
-  border: 1px solid orange;
+.clearing-featured-img:hover {
+  border: 1px solid red;
+}
+
+.clearing-blackout {
+  background: rgba(0, 0, 0, 0.2) !important;
+}
+
+.clearing-assembled .clearing-container .visible-img {
+  background: rgba(0, 0, 0, 0.2) !important;
+}
+
+.clearing-close {
+  font-size: 48px !important;
 }
 
 /*-----------------------------------------
@@ -139,13 +151,13 @@ Skills
 -----------------------------------------*/
 
 .skillGrid {
-  /*width: 90%;*/
+  width: 90%;
   margin: 0 auto;
 }
 
 .skillBar {
   height: 10%;
-  margin: 4%;
+  /*margin: 1%;*/
   border: 1px solid orange;
 }
 
