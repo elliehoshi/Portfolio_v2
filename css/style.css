@@ -74,6 +74,7 @@ body {
   height: 2px;
   width: 100px;
   margin: 0 auto;
+  margin-bottom: 5%;
 }
 
 #skills {
@@ -112,32 +113,15 @@ Portfolio
 About
 -----------------------------------------*/
 
-#aboutContent {
-  width: 90%;
-  /*height: 40%;*/
-  overflow: auto;
-  /*border: 1px solid black;*/
-  margin: 0 auto;
-}
-
 #elliePhoto {
-  width: 30%;
+  width: 80%;
   /*border: 3px solid orange;*/
-  display: inline-block;
   border-radius: 50%;
   overflow: hidden;
 }
 
-#elliePhoto img {
-  height: 100%;
-  width: 100%;
-}
-
 #aboutDescription {
-  width: 60%;
   font-size: 1.5em;
-  /*border: 3px solid orange;*/
-  display: inline-block;
   text-align: left;
   font-family: 'Josefin Sans', sans-serif;
   color: rgba(106, 106, 106, 1);
