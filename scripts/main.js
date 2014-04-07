@@ -4,16 +4,16 @@
 $(document).ready(function() {
 
   // For Parallax Background with Cursor Movement
-  $('#landing-content').mousemove(function(e){
+  $('#blackBackdrop').mousemove(function(e){
     var amountMovedX = (e.pageX * -1 / 6);
     var amountMovedY = (e.pageY * -1 / 6);
-    $(this).css('left', amountMovedX * 4);
-    $(this).css('top', amountMovedY);
+    $('#landing-content').css('left', amountMovedX * 4);
+    $('#landing-content').css('top', amountMovedY);
     // $(this).css('background-position', amountMovedX + 'px ' + amountMovedY + 'px');
   });
 
   // For Parallax Box1 with Cursor Movement
-  $('#landing-content').mousemove(function(e){
+  $('#blackBackdrop').mousemove(function(e){
     var amountMovedX = (e.pageX * 1 / 4);
     var amountMovedY = (e.pageY * 1 / 4);
     $('#movement2').css('left', amountMovedX * 2);
