@@ -126,3 +126,11 @@ About
   font-family: 'Josefin Sans', sans-serif;
   color: rgba(106, 106, 106, 1);
 }
+
+/*-----------------------------------------
+Contact
+-----------------------------------------*/
+#contactInfo {
+  font-size: 18pt;
+  text-align: left;
+}
