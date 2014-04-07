@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/fullPage.css">
+  <link rel="stylesheet" href="css/foundation.min.css" />
   <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
   <script src="http://code.jquery.com/ui/1.10.4/jquery-ui.min.js"></script>
-  <link rel="stylesheet" type="text/css" href="style/style.css">
-  <link rel="stylesheet" type="text/css" href="style/fullPage.css">
-  <script type="text/javascript" src="scripts/main.js"></script>
-  <script type="text/javascript" src="scripts/jquery.fullPage.min.js"></script>
+  <script src="js/vendor/modernizr.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
+  <script type="text/javascript" src="js/jquery.fullPage.min.js"></script>
   <link href='http://fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Josefin+Sans:100,300,400,600,700' rel='stylesheet' type='text/css'>
   <title>Ellie Hoshizaki | Web Developer & Designer</title>
@@ -33,12 +37,19 @@
   </div>
 
   <div class="section" id="works" data-id="work">
-    <h1>works</h1>
+    <h1 class="title">works</h1>
+    <div class="spacer"></div>
+    <div id="portfolio">
+    </div>
+  </div>
+
+  <div class="section" id="skills" data-id="skill">
+    <h1 class="title">skills</h1>
     <div class="spacer"></div>
   </div>
 
   <div class="section" id="about">
-    <h1>about</h1>
+    <h1 class="title">about</h1>
     <div class="spacer"></div>
     <div id="aboutContent">
       <div id="elliePhoto">
@@ -55,7 +66,7 @@
   </div>
 
   <div class="section" id="contact">
-    <h1>contact</h1>
+    <h1 class="title">contact</h1>
     <div class="spacer"></div>
     <p>Say Hello!</p>
     <p>Ellie Hoshizaki</p>
@@ -63,6 +74,10 @@
     <p>310.383.0801</p>
 
   </div>
-
+  
+    <script src="js/foundation.min.js"></script>
+    <script>
+      $(document).foundation();
+    </script>
 </body>
 </html>
