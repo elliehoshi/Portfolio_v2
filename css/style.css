@@ -70,7 +70,7 @@ body {
 }
 
 .spacer {
-  background-color: rgba(162, 213, 213, 1);;
+  background-color: rgba(162, 213, 213, 1);
   height: 2px;
   width: 100px;
   margin: 0 auto;
@@ -109,7 +109,7 @@ Portfolio
   width: 650px;
   height: 210px;
   margin: 0 auto;
-  border: 1px solid orange;
+  /*border: 1px solid orange;*/
 }
 
 
@@ -126,11 +126,14 @@ About
 .aboutColumn {
   /*border: 1px solid orange;*/
   display: inline-block;
+  width: 47%;
 }
 
 #elliePhoto {
-  width: 20%;
-  /*border: 3px solid orange;*/
+  float: right;
+  margin-right: 30px;
+  width: 42%;
+  border: 6px solid rgba(162, 213, 213, 1);
   border-radius: 50%;
   overflow: hidden;
 }

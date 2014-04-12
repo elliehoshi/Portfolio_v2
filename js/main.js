@@ -26,4 +26,7 @@ $(document).ready(function() {
   $.fn.fullpage();
   console.log("inside");
 
+  // For Portfolio Lightbox
+  $(".fancybox").fancybox();
+  
 });
