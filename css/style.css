@@ -21,7 +21,6 @@ body {
 #landing-content {
   position: absolute;
   top: 0;
-  /*overflow: auto;*/
   background-image: url(../img/fractal1_fill.svg);
   opacity: .4;
   background-size: contain;
@@ -35,7 +34,6 @@ body {
   background-image: url(../img/fractal2_fill.svg);
   background-size: contain;
   background-repeat: no-repeat;
-  /*border: 2px solid white;*/
   height: 1200px;
   width: 800px;
   top: 0;
@@ -47,7 +45,6 @@ body {
   background-image: url(../img/fractal3_fill.svg);
   background-size: contain;
   background-repeat: no-repeat;
-  /*border: 2px solid white;*/
   height: 800px;
   width: 1200px;
 }
@@ -148,23 +145,49 @@ About
 /*-----------------------------------------
 Skills
 -----------------------------------------*/
-
-.skillGrid {
-  width: 50%;
+#skillSection {
+  width: 70%;
+  text-align: center;
   margin: 0 auto;
 }
 
+.skillColumn {
+  width: 49%;
+  display: inline-block;
+}
+
+.skillTitle {
+  text-align: left;
+  padding-left: 15px;
+  margin-bottom: -1%;
+}
+
 .skillBar {
-  height: 15%;
+  height: 30px;
   margin: 1%;
-  border: 1px solid orange;
+  background-color: white;
+}
+
+.skillLevel {
+  position: absolute;
+  height: 30px;
+  background-color: rgba(162, 213, 213, 1);
+  overflow: hidden;
+}
+
+#jS {
+  width: 30%;
+}
+
+#pS {
+  width: 31%;
 }
 
 /*-----------------------------------------
 Contact
 -----------------------------------------*/
 #contactInfo {
-  width: 60%;
+  width: 70%;
   font-size: 18pt;
   text-align: center;
   /*border: 1px solid orange;*/
@@ -175,11 +198,20 @@ Contact
   /*border: 1px solid orange;*/
   display: inline-block;
   text-align: left;
+  margin: 0 4% 0 4%;
 }
 
 .socialIcons {
   height: 30px;
   width: 30px;
-  border: 1px solid orange;
+  background-color: rgba(162, 213, 213, 1);
   display: inline-block;
+}
+
+#footer {
+  position: absolute;
+  bottom: 0;
+  margin-left: 5%;
+  margin-bottom: 15px;
+  font-size: 8pt;
 }
