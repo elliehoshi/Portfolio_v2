@@ -102,26 +102,33 @@ Portfolio
   color: rgba(106, 106, 106, 1);
 }
 
+a {
+  color: rgba(245,245,245,1);
+}
+
 .overlay {
   position: relative;
   width: 350px;
   height: 350px;
   margin: 0 auto;
+  margin-left: 2%;
   display: inline-block;
 }
 
 .overlay img {
   width: 350px;
   height: 350px;
-  vertical-align: top;
+  /*vertical-align: top;*/
 }
 
 .overlay:after {
   content: attr(data-content);
   color: #fff;
+  font-size: 2em;
   position: absolute;
+  padding-top: 150px;
   width: 350px;
-  height: 350px;
+  height: 200px;
   top: 0;
   left: 0;
   background: rgba(0,0,0,0.6);
