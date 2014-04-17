@@ -27,6 +27,10 @@ $(document).ready(function() {
   console.log("inside");
 
   // For Portfolio Lightbox
-  $(".fancybox").fancybox();
-  
+  // $(".fancybox").fancybox();
+
+  //       $("#testWork1").click(function() {
+  //       $.fancybox.open('fractal1_fill.svg');
+  //     });
+
 });

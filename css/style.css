@@ -102,13 +102,37 @@ Portfolio
   color: rgba(106, 106, 106, 1);
 }
 
-.portfolioGrid {
-  width: 650px;
-  height: 210px;
+.overlay {
+  position: relative;
+  width: 350px;
+  height: 350px;
   margin: 0 auto;
-  /*border: 1px solid orange;*/
+  display: inline-block;
 }
 
+.overlay img {
+  width: 350px;
+  height: 350px;
+  vertical-align: top;
+}
+
+.overlay:after {
+  content: attr(data-content);
+  color: #fff;
+  position: absolute;
+  width: 350px;
+  height: 350px;
+  top: 0;
+  left: 0;
+  background: rgba(0,0,0,0.6);
+  opacity: 0;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+}
+
+.overlay:hover:after {
+  opacity: 1;
+}
 
 /*-----------------------------------------
 About
@@ -160,11 +184,13 @@ Skills
   text-align: left;
   padding-left: 15px;
   margin-bottom: -1%;
+  font-weight: 700;
 }
 
 .skillBar {
   height: 30px;
   margin: 1%;
+  margin-bottom: 2%;
   background-color: white;
 }
 
@@ -176,10 +202,14 @@ Skills
 }
 
 #jS {
-  width: 30%;
+  width: 29%;
 }
 
 #pS {
+  width: 30%;
+}
+
+#iL {
   width: 31%;
 }
 
@@ -202,8 +232,8 @@ Contact
 }
 
 .socialIcons {
-  height: 30px;
-  width: 30px;
+  height: 25px;
+  width: 25px;
   background-color: rgba(162, 213, 213, 1);
   display: inline-block;
 }
