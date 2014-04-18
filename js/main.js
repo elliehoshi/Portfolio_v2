@@ -27,10 +27,25 @@ $(document).ready(function() {
   console.log("inside");
 
   // For Portfolio Lightbox
-  // $(".fancybox").fancybox();
+  $(".fancybox").fancybox();
+  
+  $(".caption").fancybox({
+        wrapCSS    : 'fancybox-custom',
+        closeClick : true,
 
-  //       $("#testWork1").click(function() {
-  //       $.fancybox.open('fractal1_fill.svg');
-  //     });
+        openEffect : 'none',
+
+        helpers : {
+          title : {
+            type : 'inside',
+            color : 'black'
+          },
+          overlay : {
+            css : {
+              'background' : 'rgba(238,238,238,0.85)'
+            }
+          }
+        }
+      });
 
 });

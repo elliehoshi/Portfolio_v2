@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-  <!-- <meta charset="utf-8" /> -->
+  <!-- <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> -->
+  <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <link rel="stylesheet" type="text/css" href="css/fullPage.css">
@@ -48,34 +48,68 @@
     <h1 class="title">works</h1>
     <div class="spacer"></div>
       
-      <a class="fancybox" href="img/GoldGhost.jpg" data-fancybox-group="gallery" title="Peek">
+    <div id="portfolioContainer">  
+      <a class="caption" href="img/GoldGhost.jpg" 
+      title="
+      <h1>Peek</h1>
+      <h3><a href='http://peekachu.herokuapp.com' target='_blank'>View Full Site</a></h3>">
         <div class="overlay" data-content="Peek">
-          <img src="img/peek1.png" alt=""/>
+          <img src="img/peek1.png"/>
         </div>
       </a>
 
       <a class="fancybox" href="img/GoldGhost.jpg" data-fancybox-group="gallery" title="StyleLust">
         <div class="overlay" data-content="StyleLust">
-          <img src="img/StyleLust1.png" alt=""/>
+          <img src="img/StyleLust1.png"/>
         </div>
       </a>
     
-      <a class="fancybox" href="img/GoldGhost.jpg" data-fancybox-group="gallery" title="Pillstagram">
+      <a class="fancybox" href="img/GoldGhost.jpg" data-fancybox-group="gallery2" title="Pillstagram">
         <div class="overlay" data-content="Pillstagram">
-          <img src="img/Pillstagram1.png" alt=""/>
+          <img src="img/Pillstagram1.png"/>
+        </div>
+      </a>
+
+      <a class="fancybox" href="img/GoldGhost.jpg" data-fancybox-group="gallery2" title="inBetween">
+        <div class="overlay" data-content="inBetween">
+          <img src="img/inBetween.png"/>
+        </div>
+      </a>
+
+      <a class="fancybox" href="img/GoldGhost.jpg" data-fancybox-group="gallery" title="MuseLab">
+        <div class="overlay" data-content="MuseLab">
+          <img src="img/muselab.png"/>
+        </div>
+      </a>
+
+      <a class="fancybox" href="img/GoldGhost.jpg" data-fancybox-group="gallery" title="GeoSpec">
+        <div class="overlay" data-content="GeoSpec">
+          <img src="img/GeoSpec.jpg"/>
         </div>
       </a>
 
       <!-- <a rel="gallery" class="fancybox" href="img/elenaphotocrop.jpg" id="testWork1">
         <img src="http://placekitten.com/g/350/350" alt="" />
       </a> -->
-
+    </div>
   </div>
 
   <div class="section" id="about">
     <h1 class="title">about</h1>
     <div class="spacer"></div>
     <div id="aboutSection">
+      <img src="img/elenaphotocrop.jpg" id="aboutImage"></img>
+      <div id="aboutDescription">
+        Hi!
+        <br><br>
+        I'm Ellie, a UX/UI designer and front end web developer with a BA in Architecture from UCLA.
+        <br><br>
+        I build clean code to create interactive and intuitive designs with the end user always in mind.
+      </div>
+    </div>
+
+
+<!--     <div id="aboutSection">
       <div class="aboutColumn">
         <img src="img/elenaphotocrop.jpg" id="elliePhoto"></img>
       </div>
@@ -88,7 +122,7 @@
           I build clean code to create interactive and intuitive designs with the end user always in mind.
         </div>
       </div>
-    </div>
+    </div> -->
   </div>
 
   <div class="section" id="skills" data-id="skill">
@@ -120,30 +154,37 @@
           </div>
         </div>
       </div>
+
       <div class="skillColumn">
         <p class="skillTitle">
-          skills
+          Ruby on Rails
         </p>
         <div class="skillBar">
-          <div class="skillLevel" id="iL">
+          <div class="skillLevel" id="rOR">
           </div>
         </div>
 
         <p class="skillTitle">
-          skills
+          Axure
         </p>
         <div class="skillBar">
-          <div class="skillLevel" id="iL">
+          <div class="skillLevel" id="aX">
           </div>
         </div>
 
         <p class="skillTitle">
-          skills
+          Rhinoceros 3D
         </p>
         <div class="skillBar">
-          <div class="skillLevel" id="iL">
+          <div class="skillLevel" id="rH">
           </div>
         </div>
+      </div>
+
+      <div id="resume">
+        Want to know more?
+        <br>
+        View my resume <a href="http://elliehoshizaki.com/wp-content/uploads/2013/10/EH_R%C3%A9sum%C3%A9_03.05.14.pdf" target='_blank'>here</a>!
       </div>
     </div>
   </div>
@@ -175,73 +216,10 @@
         </div>
       </div>
     </div>
-    <footer id="footer">
+    <footer>
       &copy; 2014 Elena Hoshizaki. All Rights Reserved.
     </footer>
   </div>
-
-  <script type="text/javascript">
-    $(document).ready(function() {
-      /*
-       *  Simple image gallery. Uses default settings
-       */
-
-     $(".fancybox").fancybox();
-
-
-      /*
-       *  Button helper. Disable animations, hide close button, change title type and content
-       */
-
-      $('.fancybox-buttons').fancybox({
-        openEffect  : 'none',
-        closeEffect : 'none',
-
-        prevEffect : 'none',
-        nextEffect : 'none',
-
-        closeBtn  : false,
-
-        helpers : {
-          title : {
-            type : 'inside'
-          },
-          buttons : {}
-        },
-
-        afterLoad : function() {
-          this.title = 'Image ' + (this.index + 1) + ' of ' + this.group.length + (this.title ? ' - ' + this.title : '');
-        }
-      });
-
-
-      /*
-       *  Thumbnail helper. Disable animations, hide close button, arrows and slide to next gallery item if clicked
-       */
-
-      $('.fancybox-thumbs').fancybox({
-        prevEffect : 'none',
-        nextEffect : 'none',
-
-        closeBtn  : false,
-        arrows    : false,
-        nextClick : true,
-
-        helpers : {
-          thumbs : {
-            width  : 50,
-            height : 50
-          }
-        }
-      });
-
-
-
-    });
-
-
-
-  </script>
 
 </body>
 </html>
