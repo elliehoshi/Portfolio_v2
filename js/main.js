@@ -28,17 +28,27 @@ $(document).ready(function() {
 
   // For Portfolio Lightbox
   $(".fancybox").fancybox();
-  
+
   $(".caption").fancybox({
-        wrapCSS    : 'fancybox-custom',
-        closeClick : true,
+        wrapCSS: 'fancybox-custom',
+        closeClick: true,
 
-        openEffect : 'none',
+        openEffect: 'none',
 
+        beforeLoad: function() {
+          var el, id = $(this.element).data('title-id');
+
+          if (id) {
+            el = $('#' + id);
+
+            if (el.length) {
+              this.title = el.html();
+            }
+          }
+        },
         helpers : {
           title : {
-            type : 'inside',
-            color : 'black'
+            type : 'inside'
           },
           overlay : {
             css : {
