@@ -78,18 +78,21 @@ body {
   background-color: rgba(245,245,245,1);
   font-family: 'Josefin Sans', sans-serif;
   color: rgba(106, 106, 106, 1);
+  font-size: 4em;
 }
 
 #about {
   background-color: rgba(245,245,245,1);
   font-family: 'Josefin Sans', sans-serif;
   color: rgba(106, 106, 106, 1);
+  font-size: 4em;
 }
 
 #contact {
   background-color: rgba(245,245,245,1);
   font-family: 'Josefin Sans', sans-serif;
   color: rgba(106, 106, 106, 1);
+  font-size: 4em;
 }
 
 /*-----------------------------------------
@@ -100,6 +103,7 @@ Portfolio
   background-color: rgba(245,245,245,1);
   font-family: 'Josefin Sans', sans-serif;
   color: rgba(106, 106, 106, 1);
+  font-size: 4em;
 }
 
 #portfolioContainer {
@@ -117,6 +121,7 @@ Portfolio
   height: 300px;
   margin: 0 auto;
   display: inline-block;
+  font-size: 19pt;
 }
 
 .overlay img {
@@ -216,10 +221,32 @@ Skills
 
 .skillLevel {
   position: absolute;
-  height: 30px;
+  height: 23px;
   background-color: rgba(162, 213, 213, 1);
   overflow: hidden;
+  text-align: right;
+  padding-right: 5px;
+  padding-top: 7px;
+  color: white;
+  font-size: 12pt;
+  -webkit-animation: pulse 5s ease-out infinite;
+  -moz-animation: pulse 5s ease-out infinite;
+  animation: pulse 5s ease-out infinite;
 }
+
+  @-webkit-keyframes pulse { 
+    50% { 
+      -webkit-transform-origin: 0px 0px;
+      -webkit-transform: scaleX(1.08); 
+    } 
+  }
+
+  @keyframes pulse {
+    50% {
+      transform-origin: 0px 0px;
+      transform: scaleX(1.08);
+    }
+  }
 
 #jS {
   width: 29%;
