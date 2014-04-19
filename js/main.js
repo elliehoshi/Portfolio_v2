@@ -23,7 +23,7 @@ $(document).ready(function() {
   });
 
   // For Scroll - Snap to Page
-  $.fn.fullpage();
+  // $.fn.fullpage();
   console.log("inside");
 
   // For Portfolio Lightbox

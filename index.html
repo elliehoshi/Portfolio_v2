@@ -5,27 +5,27 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" type="text/css" href="css/style.css">
-  <link rel="stylesheet" type="text/css" href="css/fullPage.css">
   <link rel="stylesheet" type="text/css" href="../source/jquery.fancybox.css?v=2.1.5" media="screen" />
   <link rel="stylesheet" type="text/css" href="../source/helpers/jquery.fancybox-buttons.css?v=1.0.5" />
   <link rel="stylesheet" type="text/css" href="../source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" />
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
   <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
   <script src="http://code.jquery.com/ui/1.10.4/jquery-ui.min.js"></script>
   <script type="text/javascript" src="js/main.js"></script>
-  <script type="text/javascript" src="js/jquery.fullPage.min.js"></script>
   <script type="text/javascript" src="../source/jquery.fancybox.js?v=2.1.5"></script>
   <script type="text/javascript" src="js/jquery.fancybox.pack.js"></script>
   <script type="text/javascript" src="helpers/jquery.mousewheel-3.0.6.pack.js"></script>
   <script type="text/javascript" src="../source/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
   <script type="text/javascript" src="../source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+  <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
   <link href='http://fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Josefin+Sans:100,300,400,600,700' rel='stylesheet' type='text/css'>
   <title>Ellie Hoshizaki | Web Developer & Designer</title>
 
 </head>
 <body>
-  
-  <div class="section" data-id="home">
+
+  <div class="home">
     <div id="blackBackdrop">
       <div id="introText">
         <h1 id="introName">
@@ -44,30 +44,56 @@
     </div>
   </div>
 
-  <div class="section" id="works" data-id="work">
+  <div id="services">
+    <span class="title">what i do</span>
+    <div class="spacer"></div>
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+        front end development
+      </div>
+      <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+        ux design
+      </div>
+      <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+        ui design
+      </div>
+    </div>
+
+  </div>
+
+  <div id="works">
     <span class="title">works</span>
     <div class="spacer"></div>
       
     <div id="portfolioContainer">  
+
       <a class="caption" href="img/peek1.png" data-title-id="Peek-Title" title="Peek">
         <div class="overlay" data-content="Peek">
           <img src="img/peek1.png"/>
         </div>
       </a>
-
+        
       <div id="Peek-Title" class="portfolio-title">
-          <h1>Peek</h1>
+        <div class="projectTitle">
+          <h2>Peek</h2>
           <p>Speed read NPR stories through Peek.</p>
+        </div>
           <span class="builtWith">
             Built with:
-            <p>MongoDB | </p>
-            <p>Express.js | </p>
-            <p>Angular.js | </p>
-            <p>Node.js | </p>
-            <p>jQuery | </p>
-            <p>JavaScript</p>
+            <ul>
+              <li>MongoDB</li>
+              <li>Express.js</li>
+              <li>Angular.js</li>
+            </ul>
           </span>
-          <h3><a href='http://peekachu.herokuapp.com' target='_blank'>View Full Site</a></h3>
+          <span class="builtWith">
+            <ul>
+              <li>Node.js</li>
+              <li>jQuery</li>
+              <li>JavaScript</li>
+            </ul>
+          </span>
+          <h3><a href='http://peekachu.herokuapp.com' target='_blank' class="btn btn-default">View Full Site</a></h3>
       </div>
 
       <a class="caption" href="img/StyleLust1.png" data-title-id="Gold-Ghost-Title" data-fancybox-group="gallery" title="StyleLust">
@@ -77,8 +103,10 @@
       </a>
 
       <div id="Gold-Ghost-Title" class="portfolio-title">
-          <h1>StyleLust</h1>
-          <p>Discover new fashion styles and trends from the hottest brands. Share your lookbooks with your friends on Facebook or Instagram. Buy your favorite items from hundreds of brands in one location.</p>
+          <h2>StyleLust</h2>
+          <span class="projDesc">
+          Discover new fashion styles and trends from the hottest brands. Share your lookbooks with your friends on Facebook or Instagram. Buy your favorite items from hundreds of brands in one location.
+          </span><br>
           <span class="builtWith">
             Built with:
             <p>Ruby on Rails | </p>
@@ -87,38 +115,44 @@
             <p>JavaScript | </p>
             <p>Zurb Foundation</p>
           </span>
-          <h3><a href='http://peekachu.herokuapp.com' target='_blank'>View Full Site</a></h3>
+          <h3><a href='http://stylelust.herokuapp.com' target='_blank' class="btn btn-default">View Full Site</a></h3>
       </div>
-    
-      <a class="fancybox" href="img/GoldGhost.jpg" data-fancybox-group="gallery2" title="Pillstagram">
-        <div class="overlay" data-content="Pillstagram">
-          <img src="img/Pillstagram1.png"/>
-        </div>
-      </a>
+      
+        <a class="fancybox" href="img/GoldGhost.jpg" data-fancybox-group="gallery2" title="Pillstagram">
+          <div class="overlay" data-content="Pillstagram">
+            <img src="img/Pillstagram1.png"/>
+          </div>
+        </a>
+      
+        <a class="fancybox" href="img/inBetween.png" data-fancybox-group="gallery2" title="inBetween">
+          <div class="overlay" data-content="inBetween">
+            <img src="img/inBetween.png"/>
+          </div>
+        </a>
 
-      <a class="fancybox" href="img/inBetween.png" data-fancybox-group="gallery2" title="inBetween">
-        <div class="overlay" data-content="inBetween">
-          <img src="img/inBetween.png"/>
-        </div>
-      </a>
+        <a class="fancybox" href="img/GoldGhost.jpg" data-fancybox-group="gallery" title="MuseLab">
+          <div class="overlay" data-content="MuseLab">
+            <img src="img/muselab.png"/>
+          </div>
+        </a>
 
-      <a class="fancybox" href="img/GoldGhost.jpg" data-fancybox-group="gallery" title="MuseLab">
-        <div class="overlay" data-content="MuseLab">
-          <img src="img/muselab.png"/>
-        </div>
-      </a>
+        <a class="fancybox" href="img/GoldGhost.jpg" data-fancybox-group="gallery" title="GoldGhost">
+          <div class="overlay" data-content="GoldGhost">
+            <img src="img/GoldGhostSquare.jpg"/>
+          </div>
+        </a>
 
-      <a class="fancybox" href="img/GoldGhost.jpg" data-fancybox-group="gallery" title="GoldGhost">
-        <div class="overlay" data-content="GoldGhost">
-          <img src="img/GoldGhost.jpg"/>
-        </div>
-      </a>
+        <a class="fancybox" href="img/GoldGhost.jpg" data-fancybox-group="gallery" title="GeoSpec">
+          <div class="overlay" data-content="GeoSpec">
+            <img src="img/GeoSpec.jpg"/>
+          </div>
+        </a>
 
-      <a class="fancybox" href="img/GoldGhost.jpg" data-fancybox-group="gallery" title="GeoSpec">
-        <div class="overlay" data-content="GeoSpec">
-          <img src="img/GeoSpec.jpg"/>
-        </div>
-      </a>
+        <a class="fancybox" href="img/GoldGhost.jpg" data-fancybox-group="gallery" title="GeoSpec">
+          <div class="overlay" data-content="GeoSpec">
+            <img src="img/GeoSpec.jpg"/>
+          </div>
+        </a>
 
       <!-- <a rel="gallery" class="fancybox" href="img/elenaphotocrop.jpg" id="testWork1">
         <img src="http://placekitten.com/g/350/350" alt="" />
@@ -126,7 +160,7 @@
     </div>
   </div>
 
-  <div class="section" id="about">
+  <div id="about">
     <span class="title">about</span>
     <div class="spacer"></div>
     <div id="aboutSection">
@@ -140,24 +174,9 @@
       </div>
     </div>
 
-
-<!--     <div id="aboutSection">
-      <div class="aboutColumn">
-        <img src="img/elenaphotocrop.jpg" id="elliePhoto"></img>
-      </div>
-      <div class="aboutColumn">
-        <div id="aboutDescription">
-          Hi!
-          <br><br>
-          I'm Ellie, a UX/UI designer and front end web developer with a BA in Architecture from UCLA.
-          <br><br>
-          I build clean code to create interactive and intuitive designs with the end user always in mind.
-        </div>
-      </div>
-    </div> -->
   </div>
 
-  <div class="section" id="skills" data-id="skill">
+  <div id="skills">
     <span class="title">skills</span>
     <div class="spacer"></div>
     <div id="skillSection">
@@ -220,27 +239,27 @@
       </div>
 
       <div id="resume">
-        Want to know more?
-        View my resume <a href="http://elliehoshizaki.com/wp-content/uploads/2013/10/EH_R%C3%A9sum%C3%A9_03.05.14.pdf" target='_blank'>here</a>.
+        Want to know more?<br>
+        <a href="http://elliehoshizaki.com/img/EH_R%C3%A9sum%C3%A9.pdf" target='_blank' class="btn btn-default btn-lg">View Résumé</a>
       </div>
     </div>
   </div>
 
-  <div class="section" id="contact">
+  <div id="contact">
     <span class="title">contact</span>
     <div class="spacer"></div>
-    <div id="contactInfo">
-      <div class="contactColumn">
+    <div class="row" id="contactInfo">
+      <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
         Ellie Hoshizaki
         <br>
         Los Angeles, CA
       </div>
-      <div class="contactColumn">
+      <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
         elena.hoshizaki@gmail.com
         <br>
         310.383.0801
       </div>
-      <div class="contactColumn">
+      <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
         Connect:
         <br>
         <div class="socialIcons">
@@ -253,9 +272,9 @@
         </div>
       </div>
     </div>
-    <footer>
+<!--     <footer>
       &copy; 2014 Elena Hoshizaki. All Rights Reserved.
-    </footer>
+    </footer> -->
   </div>
 
 </body>

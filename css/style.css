@@ -12,6 +12,37 @@ body {
   color: rgba(106, 106, 106, 1);
 }
 
+.spacer {
+  background-color: rgba(162, 213, 213, 1);
+  height: 2px;
+  width: 100px;
+  margin: 0 auto;
+  margin-bottom: 2%;
+}
+
+#skills {
+  background-color: rgba(245,245,245,1);
+  font-family: 'Josefin Sans', sans-serif;
+  color: rgba(106, 106, 106, 1);
+  font-size: 4em;
+}
+
+#about {
+  background-color: rgba(245,245,245,1);
+  font-family: 'Josefin Sans', sans-serif;
+  color: rgba(106, 106, 106, 1);
+  font-size: 4em;
+}
+
+/*-----------------------------------------
+Home
+-----------------------------------------*/
+.home {
+  width: 100vw;
+  height: 100vh;
+  display: table;
+}
+
 #blackBackdrop {
   background-image: url(../img/subtle_carbon.png);
   width: 100%;
@@ -66,54 +97,40 @@ body {
   /*margin-bottom: 1em;*/
 }
 
-.spacer {
-  background-color: rgba(162, 213, 213, 1);
-  height: 2px;
-  width: 100px;
-  margin: 0 auto;
-  margin-bottom: 2%;
-}
-
-#skills {
-  background-color: rgba(245,245,245,1);
+/*-----------------------------------------
+Services
+-----------------------------------------*/
+#services {
   font-family: 'Josefin Sans', sans-serif;
   color: rgba(106, 106, 106, 1);
   font-size: 4em;
-}
-
-#about {
+  width: 100vw;
+  height: 100vh;
+  padding-top: 5%;
   background-color: rgba(245,245,245,1);
-  font-family: 'Josefin Sans', sans-serif;
-  color: rgba(106, 106, 106, 1);
-  font-size: 4em;
+  display: table;
+  /*border: 5px solid blue;*/
 }
 
-#contact {
-  background-color: rgba(245,245,245,1);
-  font-family: 'Josefin Sans', sans-serif;
-  color: rgba(106, 106, 106, 1);
-  font-size: 4em;
-}
-
-a {
-  color: rgba(106, 106, 106, 1);
-  text-decoration: none;
-  border-bottom: 3px solid rgba(162, 213, 213, 1);
-}
 /*-----------------------------------------
 Portfolio
 -----------------------------------------*/
 
 #works {
-  background-color: rgba(245,245,245,1);
   font-family: 'Josefin Sans', sans-serif;
   color: rgba(106, 106, 106, 1);
   font-size: 4em;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(245,245,245,1);
+  display: table;
+  /*border: 5px solid blue;*/
 }
 
 #portfolioContainer {
   width: 75%;
   margin: 0 auto;
+  /*text-align: left;*/
 }
 
 #portfolioContainer a {
@@ -128,26 +145,28 @@ Portfolio
 
 .overlay {
   position: relative;
-  width: 300px;
-  height: 300px;
+  width: 250px;
+  height: 250px;
   margin: 0 auto;
   display: inline-block;
+  margin-bottom: 1%;
   font-size: 19pt;
 }
 
 .overlay img {
-  width: 300px;
-  height: 300px;
+  width: 250px;
+  height: 250px;
 }
 
 .overlay:after {
   content: attr(data-content);
   color: #fff;
+  text-align: center;
   font-size: 2em;
   position: absolute;
-  padding-top: 150px;
-  width: 300px;
-  height: 150px;
+  padding-top: 100px;
+  width: 250px;
+  height: 250px;
   top: 0;
   left: 0;
   background: rgba(0,0,0,0.6);
@@ -160,13 +179,45 @@ Portfolio
   opacity: 1;
 }
 
+.portfolio-title {
+  position: relative;
+  border: 1px solid black;
+}
+
+.projectTitle {
+  display: inline-block;
+  vertical-align: top;
+  text-align: left;
+  position: absolute;
+  left: 0;
+}
+
+.builtWith {
+  display: inline-block;
+/*  position: absolute;
+  right: 0;*/
+}
+
 .builtWith p {
   display: inline-block;
+/*  position: absolute;
+  right: 0;*/
+}
+
+.projDesc {
+  margin-bottom: 0;
+  text-align: left;
 }
 
 /*-----------------------------------------
 About
 -----------------------------------------*/
+#about {
+  width: 100vw;
+  height: 100vh;
+  clear: both;
+}
+
 #aboutSection {
   width: 50%;
   /*border: 1px solid orange;*/
@@ -174,23 +225,8 @@ About
   /*text-align: center;*/
 }
 
-.aboutColumn {
-  /*border: 1px solid orange;*/
-  display: inline-block;
-  width: 47%;
-}
-
 #aboutImage {
   width: 30%;
-  border: 6px solid rgba(162, 213, 213, 1);
-  border-radius: 50%;
-  overflow: hidden;
-}
-
-#elliePhoto {
-  float: right;
-  margin-right: 30px;
-  width: 42%;
   border: 6px solid rgba(162, 213, 213, 1);
   border-radius: 50%;
   overflow: hidden;
@@ -208,10 +244,16 @@ About
 /*-----------------------------------------
 Skills
 -----------------------------------------*/
+#skills {
+  width: 100vw;
+  height: 100vh;
+}
+
 #skillSection {
   width: 70%;
   text-align: center;
   margin: 0 auto;
+
 }
 
 .skillColumn {
@@ -236,7 +278,7 @@ Skills
 
 .skillLevel {
   position: absolute;
-  height: 23px;
+  height: 30px;
   background-color: rgba(162, 213, 213, 1);
   overflow: hidden;
   text-align: right;
@@ -298,20 +340,21 @@ Skills
 /*-----------------------------------------
 Contact
 -----------------------------------------*/
-#contactInfo {
-  width: 70%;
-  font-size: 18pt;
-  text-align: center;
-  /*border: 1px solid orange;*/
-  margin: 0 auto;
+#contact {
+  background-color: rgba(245,245,245,1);
+  font-family: 'Josefin Sans', sans-serif;
+  color: rgba(106, 106, 106, 1);
+  font-size: 4em;
+  width: 100vw;
+  height: 70vh;
 }
 
-.contactColumn {
-  /*border: 1px solid orange;*/
-  width: 20%;
-  display: inline-block;
-  text-align: left;
-  margin: 0 4% 0 4%;
+#contactInfo {
+  width: 70%;
+  text-align: center;
+  margin: 0 auto;
+  font-size: 16pt;
+  overflow: auto;
 }
 
 .socialIcons {
