@@ -81,6 +81,108 @@ li {
 }
 
 /*-----------------------------------------
+Animations
+-----------------------------------------*/
+@-webkit-keyframes bounceIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(.3);
+    transform: scale(.3);
+  }
+
+  50% {
+    opacity: 1;
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+  }
+
+  70% {
+    -webkit-transform: scale(.9);
+    transform: scale(.9);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+@keyframes bounceIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(.3);
+    -ms-transform: scale(.3);
+    transform: scale(.3);
+  }
+
+  50% {
+    opacity: 1;
+    -webkit-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    transform: scale(1.05);
+  }
+
+  70% {
+    -webkit-transform: scale(.9);
+    -ms-transform: scale(.9);
+    transform: scale(.9);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+.bounceIn {
+  visibility: visible !important;
+  -webkit-animation-name: bounceIn;
+  -webkit-animation-duration: 1.6s;
+  animation-name: bounceIn;
+  animation-duration: 1.6s;
+}
+
+@-webkit-keyframes fadeInDownBig {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-2000px);
+    transform: translateY(-2000px);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInDownBig {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-2000px);
+    -ms-transform: translateY(-2000px);
+    transform: translateY(-2000px);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+.fadeInDownBig {
+  -webkit-animation-name: fadeInDownBig;
+  animation-name: fadeInDownBig;
+  -webkit-animation-duration: 1.6s;
+  visibility: visible !important;
+}
+
+/*-----------------------------------------
 Home
 -----------------------------------------*/
 .home {
@@ -137,6 +239,7 @@ Home
 
 #introText {
   padding-top: 15%;
+  visibility: hidden;
 }
 
 #introName {
@@ -181,6 +284,29 @@ Services
   border-radius: 50%;
   margin: 0 auto;
   margin-top: 5%;
+  /*opacity: 0;*/
+  visibility: hidden;
+}
+
+#uxIcon:hover {
+  -webkit-animation-name: bounceIn;
+  -webkit-animation-duration: .5s;
+  animation-name: bounceIn;
+  animation-duration: .5s;
+}
+
+#uiIcon:hover {
+  -webkit-animation-name: bounceIn;
+  -webkit-animation-duration: .5s;
+  animation-name: bounceIn;
+  animation-duration: .5s;
+}
+
+#codeIcon:hover {
+  -webkit-animation-name: bounceIn;
+  -webkit-animation-duration: .5s;
+  animation-name: bounceIn;
+  animation-duration: .5s;
 }
 
 /*-----------------------------------------
@@ -189,11 +315,13 @@ Portfolio
 
 #works {
   font-family: 'Josefin Sans', sans-serif;
-  color: rgba(106, 106, 106, 1);
+  color: rgba(236, 236, 236, 1);
   font-size: 4em;
   width: 100vw;
   height: 100vh;
-  background-color: rgba(245,245,245,1);
+  background-color: rgba(35,35,35,1);
+  border-top: 2px dotted rgba(205,205,205,1);
+  border-bottom: 2px dotted rgba(205,205,205,1);
   display: table;
   padding-top: 7%;
 }
@@ -240,7 +368,9 @@ Portfolio
   height: 250px;
   top: 0;
   left: 0;
-  background: rgba(0,0,0,0.6);
+  background-image: url(../img/search.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
   opacity: 0;
   transition: all 0.5s;
   -webkit-transition: all 0.5s;
@@ -290,13 +420,13 @@ About
   clear: both;
   padding-top: 5%;
   display: table;
+  background-color: rgba(205,205,205,1);
+  border-bottom: 2px dotted rgba(205,205,205,1);
 }
 
 #aboutSection {
   width: 50%;
-  /*border: 1px solid orange;*/
   margin: 0 auto;
-  /*text-align: center;*/
 }
 
 #aboutImage {

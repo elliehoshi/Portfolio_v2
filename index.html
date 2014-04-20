@@ -24,11 +24,11 @@
   <title>Ellie Hoshizaki | Web Developer & Designer</title>
 
 </head>
-<body>
+<body data-spy="scroll" data-target="#nav">
 
   <header class="home">
     <div id="blackBackdrop">
-      <div id="introText">
+      <div class="bounceIn" id="introText">
         <h1 id="introName">
           ELLIE HOSHIZAKI
         </h1>
@@ -59,11 +59,11 @@
       </a>
       <div class="navbar-collapse collapse">
         <ul class="nav pull-right navbar-nav">
-          <li><a href="#services">Services</a></li>
-          <li><a href="#works">Works</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#services">SERVICES</a></li>
+          <li><a href="#works">WORKS</a></li>
+          <li><a href="#about">ABOUT</a></li>
+          <li><a href="#skills">SKILLS</a></li>
+          <li><a href="#contact">CONTACT</a></li>
         </ul>
       </div>    
     </div>
@@ -78,19 +78,19 @@
     <div class="row" id="servicesContainer">
       <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
         <div class="servicesIcon">
-          <img src="img/uxicon.svg"/>
+          <img src="img/uxicon.svg" id="uxIcon"/>
         </div>
         UX DESIGN
       </div>
       <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
         <div class="servicesIcon">
-          <img src="img/codeicon.svg"/>
+          <img src="img/codeicon.svg" id="codeIcon"/>
         </div>
         FRONT END DEVELOPMENT
       </div>
       <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
         <div class="servicesIcon">
-          <img src="img/uiicon.svg"/>
+          <img src="img/uiicon.svg" id="uiIcon"/>
         </div>
         UI DESIGN
       </div>
@@ -104,7 +104,7 @@
       
     <div id="portfolioContainer">  
 
-      <a class="caption" href="img/peek1.png" data-title-id="Peek-Title" title="Peek">
+      <a class="caption" href="img/peek1.png" data-title-id="Peek-Title">
         <div class="overlay" data-content="Peek">
           <img src="img/peek1.png"/>
         </div>
@@ -127,7 +127,7 @@
         <a href='http://peekachu.herokuapp.com' target='_blank' class="btn btn-default">View Full Site</a>
       </div>
 
-      <a class="caption" href="img/StyleLust1.png" data-title-id="StyleLust-Title" data-fancybox-group="gallery2" title="StyleLust">
+      <a class="caption" href="img/StyleLust1.png" data-title-id="StyleLust-Title" data-fancybox-group="gallery2">
         <div class="overlay" data-content="StyleLust">
           <img src="img/StyleLust1.png"/>
         </div>
@@ -149,7 +149,7 @@
         <a href='http://stylelust.herokuapp.com' target='_blank' class="btn btn-default">View Full Site</a>
       </div>
 
-      <a class="caption" href="img/Pillstagram1.png" data-title-id="Pillstagram-Title" data-fancybox-group="gallery3" title="Pillstagram">
+      <a class="caption" href="img/Pillstagram1.png" data-title-id="Pillstagram-Title" data-fancybox-group="gallery3">
         <div class="overlay" data-content="Pillstagram">
           <img src="img/Pillstagram1.png"/>
         </div>
@@ -169,7 +169,7 @@
         </div>
       </div>
       
-      <a class="caption" href="img/muselab.png" data-title-id="MuseLab-Title" data-fancybox-group="gallery5" title="MuseLab">
+      <a class="caption" href="img/muselab.png" data-title-id="MuseLab-Title" data-fancybox-group="gallery5">
         <div class="overlay" data-content="MuseLab">
           <img src="img/muselab.png"/>
         </div>
@@ -189,7 +189,7 @@
           </div>
       </div>
 
-      <a class="caption" href="img/inBetween.png" data-title-id="inBetween-Title" data-fancybox-group="gallery4" title="inBetween">
+      <a class="caption" href="img/inBetween.png" data-title-id="inBetween-Title" data-fancybox-group="gallery4">
         <div class="overlay" data-content="inBetween">
           <img src="img/inBetween.png"/>
         </div>
@@ -209,7 +209,7 @@
         </div>
       </div>
 
-        <a class="caption" href="img/GoldGhost.jpg" data-title-id="GoldGhost-Title" data-fancybox-group="gallery6" title="Gold Ghost">
+        <a class="caption" href="img/GoldGhost.jpg" data-title-id="GoldGhost-Title" data-fancybox-group="gallery6">
           <div class="overlay" data-content="Gold Ghost">
             <img src="img/GoldGhostSquare.jpg"/>
           </div>
@@ -229,7 +229,7 @@
           </div>
         </div>
 
-        <a class="caption" href="img/GeoSpec.jpg" data-title-id="GeoSpec-Title" data-fancybox-group="gallery7" title="GeoSpec">
+        <a class="caption" href="img/GeoSpec.jpg" data-title-id="GeoSpec-Title" data-fancybox-group="gallery7">
           <div class="overlay" data-content="GeoSpec">
             <img src="img/GeoSpec.jpg"/>
           </div>
@@ -248,7 +248,7 @@
           </div>
         </div>
 
-        <a class="caption" href="img/houseicon.gif" data-title-id="House-Title" data-fancybox-group="gallery8" title="House">
+        <a class="caption" href="img/houseicon.gif" data-title-id="House-Title" data-fancybox-group="gallery8">
           <div class="overlay" data-content="House">
             <img src="img/houseicon.gif"/>
           </div>

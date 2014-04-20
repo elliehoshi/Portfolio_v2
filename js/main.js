@@ -37,7 +37,7 @@ $(document).ready(function() {
         wrapCSS: 'fancybox-custom',
         closeClick: true,
 
-        openEffect: 'none',
+        openEffect: 'elastic',
 
         beforeLoad: function() {
           var el, id = $(this.element).data('title-id');
@@ -61,5 +61,39 @@ $(document).ready(function() {
           }
         }
       });
+
+  // jQuery Scroll Animation
+  $(window).scroll(function(){
+    $('.servicesIcon').each(function(){
+      var iconPos = $(this).offset().top;
+
+      var topOfWindow = $(window).scrollTop();
+        if (iconPos < topOfWindow+600) {
+          $(this).addClass("bounceIn");
+        }
+    });
+  });
+
+  //   $(window).bind('scroll',function(e){
+  //     parallaxScroll();
+  // });
+ 
+  // function parallaxScroll(){
+  //   var scrolled = $(window).scrollTop();
+
+  //   $('#works').css('top',(4-(scrolled*.9))+'px');
+  //   $('#portfolioContainer').css('top',(9-(scrolled*.9))+'px');
+  // }
+
+  // Animate Nav Scroll
+  $("#nav ul li a[href^='#']").on('click', function(e){
+    e.preventDefault();
+    var hash = this.hash;
+    $('html, body').animate({
+      scrollTop: $(this.hash).offset().top
+    }, 300, function() {
+      window.location.hash = hash;
+    });
+  });
 
 });
