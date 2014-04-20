@@ -67,6 +67,18 @@ header {
   background-color: white;
 }
 
+li {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 12pt;
+}
+
+#logo {
+  width: 50px;
+  height: 45px;
+  position: absolute;
+  top: 0;
+}
+
 /*-----------------------------------------
 Home
 -----------------------------------------*/
@@ -184,7 +196,7 @@ Portfolio
   height: 100vh;
   background-color: rgba(245,245,245,1);
   display: table;
-  padding-top: 5%;
+  padding-top: 7%;
 }
 
 #portfolioContainer {
@@ -276,6 +288,7 @@ About
   height: 100vh;
   clear: both;
   padding-top: 5%;
+  display: table;
 }
 
 #aboutSection {
@@ -308,6 +321,7 @@ Skills
   width: 100vw;
   height: 100vh;
   padding-top: 5%;
+  display: table;
 }
 
 #skillSection {
