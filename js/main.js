@@ -22,8 +22,12 @@ $(document).ready(function() {
     $('#movement3').css('top', amountMovedY);
   });
 
-  // For Scroll - Snap to Page
-  // $.fn.fullpage();
+  // Sticky Nav
+  $('#nav').affix({
+      offset: {
+        top: $('header').height()
+      }
+  }); 
   console.log("inside");
 
   // For Portfolio Lightbox

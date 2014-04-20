@@ -25,7 +25,7 @@
 </head>
 <body>
 
-  <div class="home">
+  <header class="home">
     <div id="blackBackdrop">
       <div id="introText">
         <h1 id="introName">
@@ -42,19 +42,52 @@
       <div id="movement3">
       </div>       
     </div>
-  </div>
+  </header>
+
+
+  <!-- Begin Navbar -->
+<div id="nav">
+  <div class="navbar navbar-inverse navbar-static-top">
+    <div class="container">
+      <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+      <a href="#" class="navbar-brand">Home</a>
+      <a class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="glyphicon glyphicon-bar"></span>
+        <span class="glyphicon glyphicon-bar"></span>
+        <span class="glyphicon glyphicon-bar"></span>
+      </a>
+      <div class="navbar-collapse collapse">
+        <ul class="nav pull-right navbar-nav">
+          <li><a href="#services">Services</a></li>
+          <li><a href="#works">Works</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>    
+    </div>
+  </div><!-- /.navbar -->
+</div>
+
+
 
   <div id="services">
     <span class="title">what i do</span>
     <div class="spacer"></div>
-    <div class="row">
+    <div class="row" id="servicesContainer">
       <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+        <div class="servicesIcon">
+        </div>
         front end development
       </div>
       <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+        <div class="servicesIcon">
+        </div>
         ux design
       </div>
       <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+        <div class="servicesIcon">
+        </div>
         ui design
       </div>
     </div>
@@ -250,17 +283,19 @@
     <div class="spacer"></div>
     <div class="row" id="contactInfo">
       <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
-        Ellie Hoshizaki
+        <strong>ELLIE HOSHIZAKI</strong>
         <br>
         Los Angeles, CA
       </div>
       <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+        <strong>LET'S TALK</strong>
+        <br>
         elena.hoshizaki@gmail.com
         <br>
         310.383.0801
       </div>
       <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
-        Connect:
+        <strong>CONNECT</strong>
         <br>
         <div class="socialIcons">
         </div>
