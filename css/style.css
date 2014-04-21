@@ -216,7 +216,7 @@ Home
   background-image: url(../img/fractal2_fill.svg);
   background-size: contain;
   background-repeat: no-repeat;
-  height: 1200px;
+  height: 900px;
   width: 800px;
   top: 0;
   right: 0;
@@ -230,8 +230,8 @@ Home
   background-image: url(../img/fractal3_fill.svg);
   background-size: contain;
   background-repeat: no-repeat;
-  height: 800px;
-  width: 1200px;
+  height: 900px;
+  width: 1300px;
   -webkit-animation: pulse 5s ease-out infinite;
   -moz-animation: pulse 5s ease-out infinite;
   animation: pulse 5s ease-out infinite;
@@ -541,17 +541,28 @@ Skills
 Contact
 -----------------------------------------*/
 #contact {
-  background-color: rgba(245,245,245,1);
+  /*background-color: rgba(245,245,245,1);*/
+  background-image: url(../img/blue_mountains.png);
+  background-size: cover;
+  background-repeat: no-repeat;
   font-family: 'Josefin Sans', sans-serif;
   color: rgba(106, 106, 106, 1);
   font-size: 4em;
   width: 100vw;
-  height: 70vh;
+  height: 100vh;
   padding-top: 5%;
 }
 
-#contactInfo {
+#contactContainer {
+  background-color: rgba(245, 245, 245, 0.4);
   width: 70%;
+  margin: 0 auto;
+  margin-top: 15%;
+  padding-bottom: 2%;
+}
+
+#contactInfo {
+  width: 100%;
   margin: 0 auto;
   font-size: 18pt;
   overflow: auto;
