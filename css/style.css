@@ -411,6 +411,10 @@ Portfolio
   text-align: left;
 }
 
+a.hiddenPortfolioImg {
+  display: none;
+}
+
 /*-----------------------------------------
 About
 -----------------------------------------*/
