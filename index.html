@@ -4,11 +4,12 @@
   <!-- <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> -->
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+  <meta name="description" content="Ellie Hoshizaki is a UI/UX Designer and Front End Developer based in Los Angeles.">
+  <meta property="og:image" content="img/EH_logo.svg" />
   <link rel="icon" type="image/png" href="img/favicon.ico">
   <link rel="stylesheet" type="text/css" href="css/normalize.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <link rel="stylesheet" type="text/css" href="../source/jquery.fancybox.css?v=2.1.5" media="screen" />
-  <link rel="stylesheet" type="text/css" href="../source/helpers/jquery.fancybox-buttons.css?v=1.0.5" />
   <link rel="stylesheet" type="text/css" href="../source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" />
   <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
   <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
@@ -16,11 +17,9 @@
   <script type="text/javascript" src="../source/jquery.fancybox.js?v=2.1.5"></script>
   <script type="text/javascript" src="js/jquery.fancybox.pack.js"></script>
   <script type="text/javascript" src="helpers/jquery.mousewheel-3.0.6.pack.js"></script>
-  <script type="text/javascript" src="../source/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
   <script type="text/javascript" src="../source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
   <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
-  <link href='http://fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'>
-  <link href='http://fonts.googleapis.com/css?family=Josefin+Sans:100,300,400,600,700' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Josefin+Sans:300' rel='stylesheet' type='text/css'>
   <title>Ellie Hoshizaki | Web Developer & Designer</title>
 
 </head>
@@ -28,13 +27,18 @@
 
   <header class="home">
     <div id="blackBackdrop">
-      <div class="bounceIn" id="introText">
-        <h1 id="introName">
-          ELLIE HOSHIZAKI
-        </h1>
+      <div class="bounceIn" id="introText">  
+        <div id="introName">
+          <img src="img/titletext.svg"/>
+        </div>
         <h4 id="introDescription">
           Front End Developer | UX/UI Designer
         </h4>
+        <h6 id="scroll">
+          SCROLL
+          <br>
+          <span class="glyphicon glyphicon-chevron-down"></span>
+        </h6>
       </div>
       <div id="landing-content">
       </div>
@@ -53,9 +57,7 @@
       <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
       <a href="#" class="navbar-brand"><img src="img/EH_logo.svg" id="logo"/></a>
       <a class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-        <span class="glyphicon glyphicon-bar"></span>
-        <span class="glyphicon glyphicon-bar"></span>
-        <span class="glyphicon glyphicon-bar"></span>
+        <span class="glyphicon glyphicon-align-justify"></span>
       </a>
       <div class="navbar-collapse collapse">
         <ul class="nav pull-right navbar-nav">
@@ -155,9 +157,15 @@
         </div>
       </a>
 
-        <a class="hiddenPortfolioImg caption" href="img/pillstagram2.png" data-title-id="Pillstagram-Title" data-fancybox-group="pillstagramGallery"><img src="img/houseicon.gif"/></a>
+        <a class="hiddenPortfolioImg caption" href="img/pillstagram2.png" data-title-id="Pillstagram-Title" data-fancybox-group="pillstagramGallery"><img src="img/pillstagram2.png"/></a>
 
         <a class="hiddenPortfolioImg caption" href="img/pillstagram3.png" data-title-id="Pillstagram-Title" data-fancybox-group="pillstagramGallery"><img src="img/pillstagram3.png"/></a>
+
+        <a class="hiddenPortfolioImg caption" href="img/pillstagram4.png" data-title-id="Pillstagram-Title" data-fancybox-group="pillstagramGallery"><img src="img/pillstagram4.png"/></a>
+
+        <a class="hiddenPortfolioImg caption" href="img/pillstagram5.png" data-title-id="Pillstagram-Title" data-fancybox-group="pillstagramGallery"><img src="img/pillstagram5.png"/></a>
+
+        <a class="hiddenPortfolioImg caption" href="img/pillstagram6.png" data-title-id="Pillstagram-Title" data-fancybox-group="pillstagramGallery"><img src="img/pillstagram6.png"/></a>
 
       <div id="Pillstagram-Title" class="portfolio-title">
         <div class="projTitle">Pillstagram - UX Deck for Mobile Medical App</div>
@@ -219,6 +227,8 @@
             <img src="img/GoldGhostSquare.jpg"/>
           </div>
         </a>
+
+        <a class="hiddenPortfolioImg caption" href="img/GoldGhostExperienceMap.jpg" data-title-id="GoldGhost-Title" data-fancybox-group="gallery6"><img src="img/GoldGhostExperienceMap.jpg"/></a>
 
         <div id="GoldGhost-Title" class="portfolio-title">
           <div class="projTitle">Gold Ghost Studio - UX Deck for eCommerce App</div>
@@ -405,36 +415,36 @@
     <div id="contactContainer">
       <span class="title">contact</span>
       <div class="spacer"></div>
-        <div class="row" id="contactInfo">
-          <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
-            <strong>ELLIE HOSHIZAKI</strong>
-            <br>
-            Los Angeles, CA
+      <div class="row" id="contactInfo">
+        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+          <strong>ELLIE HOSHIZAKI</strong>
+          <br>
+          Los Angeles, CA
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+          <strong>LET'S TALK</strong>
+          <br>
+          elena.hoshizaki@gmail.com
+          <br>
+          310.383.0801
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+          <strong>CONNECT</strong>
+          <br>
+          <div class="socialIcons">
           </div>
-          <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
-            <strong>LET'S TALK</strong>
-            <br>
-            elena.hoshizaki@gmail.com
-            <br>
-            310.383.0801
+          <div class="socialIcons">
           </div>
-          <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
-            <strong>CONNECT</strong>
-            <br>
-            <div class="socialIcons">
-            </div>
-            <div class="socialIcons">
-            </div>
-            <div class="socialIcons">
-            </div>
-            <div class="socialIcons">
-            </div>
+          <div class="socialIcons">
+          </div>
+          <div class="socialIcons">
           </div>
         </div>
-  <!--     <footer>
-        &copy; 2014 Elena Hoshizaki. All Rights Reserved.
-      </footer> -->
+      </div>
     </div>
+    <footer>
+      &copy; 2014 Designed & Coded by Ellie Hoshizaki.
+    </footer>
   </div>
 
 </body>
