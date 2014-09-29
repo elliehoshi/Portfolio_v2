@@ -3,6 +3,19 @@
 // ------------------------------------------
 $(document).ready(function() {
 
+  $(window).scroll(function(){
+    var scrollTop = $('header').height();
+    if($(window).scrollTop() >= scrollTop){
+      $('#nav').css({
+        position : 'fixed',
+        top : '0'
+      });
+    }
+    if($(window).scrollTop() < scrollTop){
+      $('#nav').removeAttr('style');  
+    }
+  })
+
   // For Parallax Background with Cursor Movement
   $('#blackBackdrop').mousemove(function(e){
     var amountMovedX = (e.pageX * -1 / 6);
@@ -23,12 +36,12 @@ $(document).ready(function() {
   });
 
   // Sticky Nav
-  $('#nav').affix({
-      offset: {
-        top: $('header').height()
-      }
-  }); 
-  console.log("inside");
+  // $('#nav').affix({
+  //     offset: {
+  //       top: $('header').height()
+  //     }
+  // }); 
+  // console.log("inside");
 
   // For Portfolio Lightbox
   $(".fancybox").fancybox();

@@ -12,6 +12,10 @@ html, body {
   overflow-x: hidden;
 }
 
+a {
+  text-decoration: none;
+}
+
 .title {
   font-family: 'Josefin Sans', sans-serif;
   color: rgba(106, 106, 106, 1);
@@ -39,15 +43,27 @@ html, body {
   font-size: 4em;
 }
 
-a.btn.btn-default {
+.btn.btn-default {
   font-family: 'Josefin Sans', sans-serif;
   background-color: rgba(122, 173, 173, 1);
   color: white;
   border: none;
+  width: 150px;
+  height: 50px;
+  border-radius: 5px;
+  margin: 0 auto;
+  padding-top: 15px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
-a.btn.btn-default:hover {
+.btn.btn-default > a {
+  color: white;
+}
+
+.btn.btn-default:hover {
   background-color: rgba(162, 213, 213, 1);
+  cursor: pointer;
 }
 
 /* Nav */
@@ -470,7 +486,6 @@ About
 
 #aboutImage {
   width: 200px;
-  border: 6px solid rgba(162, 213, 213, 1);
   border-radius: 50%;
   overflow: hidden;
 }
@@ -517,13 +532,10 @@ Skills
 }
 
 .skillLevel {
-  position: absolute;
   height: 30px;
   background-color: rgba(162, 213, 213, 1);
   overflow: hidden;
   text-align: right;
-  padding-right: 5px;
-  padding-top: 7px;
   color: white;
   font-size: 12pt;
   -webkit-animation: pulse 3s ease-out infinite;
@@ -569,9 +581,7 @@ Skills
   width: 85%;
 }
 
-#resume {
-  width: 80%;
-  height: 5%;
+#resume {  
   margin: 0 auto;
   padding-top: 10%;
   font-size: 18pt;
@@ -623,4 +633,183 @@ footer {
   text-align: left;
   color: rgba(245, 245, 245, 0.7);
   font-weight: 100;
+}
+
+/*-----------------------------------------
+Grid
+-----------------------------------------*/
+.fourths {
+  float: left;
+  width: 25%;
+}
+
+.thirds {
+  float: left;
+  width: 33.3%;
+}
+
+/*-----------------------------------------
+Breakpoints
+-----------------------------------------*/
+
+/*large*/
+@media only screen and (min-width: 1366px) {
+
+  .large-quarters {
+    float: left;
+    width: 25%;
+  }
+
+  .large-thirds {
+    float: left;
+    width: 33.3%;
+  }
+
+  .large-half {
+    float: left;
+    width: 50%;
+  }
+
+  .large-whole {
+    float: left;
+    width: 100%;
+  }
+}
+
+/*medium*/
+@media only screen and (min-width: 1025px) and (max-width: 1366px) {
+  .medium-quarters {
+    float: left;
+    width: 25%;
+  }
+
+  .medium-thirds {
+    float: left;
+    width: 33.3%;
+  }
+
+  .medium-half {
+    float: left;
+    width: 50%;
+  }
+
+  .medium-whole {
+    float: left;
+    width: 100%;
+  }
+}
+
+/*small*/
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .small-quarters {
+    float: left;
+    width: 25%;
+  }
+
+  .small-thirds {
+    float: left;
+    width: 33.3%;
+  }
+
+  .small-half {
+    float: left;
+    width: 50%;
+  }
+
+  .small-whole {
+    float: left;
+    width: 100%;
+  }
+}
+
+/*mobile*/
+@media only screen and (min-width: 0px) and (max-width: 768px) {
+  .mobile-quarters {
+    float: left;
+    width: 25%;
+  }
+
+  .mobile-thirds {
+    float: left;
+    width: 33.3%;
+  }
+
+  .mobile-half {
+    float: left;
+    width: 50%;
+  }
+
+  .mobile-whole {
+    float: left;
+    width: 100%;
+  }
+}
+
+/*tablet*/
+@media only screen and (min-width: 569px) and (max-width: 768px) {
+  .tablet-quarters {
+    float: left;
+    width: 25%;
+  }
+
+  .tablet-thirds {
+    float: left;
+    width: 33.3%;
+  }
+
+  .tablet-half {
+    float: left;
+    width: 50%;
+  }
+
+  .tablet-whole {
+    float: left;
+    width: 100%;
+  }
+}
+
+/*landscape*/
+@media only screen and (min-width: 321px) and (max-width: 568px) {
+  .landscape-quarters {
+    float: left;
+    width: 25%;
+  }
+
+  .landscape-thirds {
+    float: left;
+    width: 33.3%;
+  }
+
+  .landscape-half {
+    float: left;
+    width: 50%;
+  }
+
+  .landscape-whole {
+    float: left;
+    width: 100%;
+  }
+}
+
+/*portrait*/
+@media only screen and (max-width: 320px) {
+  .portrait-quarters {
+    float: left;
+    width: 25%;
+  }
+
+  .portrait-thirds {
+    float: left;
+    width: 33.3%;
+  }
+
+  .portrait-half {
+    float: left;
+    width: 50%;
+  }
+
+  .portrait-whole {
+    float: left;
+    width: 100%;
+  }
 }
