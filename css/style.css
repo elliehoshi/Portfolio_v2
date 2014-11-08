@@ -14,6 +14,11 @@ html, body {
 
 a {
   text-decoration: none;
+  color: rgba(162, 213, 213, 1);
+}
+
+a:hover {
+ color: rgba(202, 253, 253, 1); 
 }
 
 .title {
@@ -77,27 +82,31 @@ header {
   position: fixed;
   top: 0;
   width: 100%;
-  z-index:10;
 }
 
-.glyphicon-bar {
-  color: white;
-  background-color: white;
+#nav {
+  z-index: 1;
+  text-align: left;
+  width: 100%;
+  position: absolute;
 }
 
-li {
+#nav ul {
+  display: inline-block;
+  padding-left: 0px;
+}
+
+#nav li {
+  display: inline-block;
   font-size: 12pt;
+  margin-right: 10px;
 }
 
 #logo {
   width: 50px;
   height: 45px;
-  position: absolute;
+  display: inline-block;
   top: 0;
-}
-
-span.glyphicon.glyphicon-align-justify {
-  color: white;
 }
 
 /*-----------------------------------------
@@ -266,7 +275,7 @@ Home
   padding-top: 15%;
   padding-bottom: 15%;
   width: 80vw;
-  height: auto;
+  height: 100%;
   position: relative;
   margin: 0 auto;
   visibility: hidden;
@@ -277,6 +286,7 @@ Home
   width: 80%;
   margin: 0 auto;
   position: relative;
+  padding-top: 50px;
 }
 
 #introName img {
@@ -293,6 +303,9 @@ Home
 #scroll {
   font-size: 1.5em;
   color: rgba(106, 106, 106, 1);  
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
 }
 
 /*-----------------------------------------
@@ -303,10 +316,9 @@ Services
   font-size: 4em;
   width: 100vw;
   height: 100vh;
-  padding-top: 5%;
+  padding-top: 10%;
   background-color: rgba(245,245,245,1);
   display: table;
-  padding-top: 5%;
 }
 
 #servicesContainer {
@@ -324,27 +336,6 @@ Services
   margin-top: 5%;
   /*opacity: 0;*/
   visibility: hidden;
-}
-
-#uxIcon:hover {
-  -webkit-animation-name: bounceIn;
-  -webkit-animation-duration: .5s;
-  animation-name: bounceIn;
-  animation-duration: .5s;
-}
-
-#uiIcon:hover {
-  -webkit-animation-name: bounceIn;
-  -webkit-animation-duration: .5s;
-  animation-name: bounceIn;
-  animation-duration: .5s;
-}
-
-#codeIcon:hover {
-  -webkit-animation-name: bounceIn;
-  -webkit-animation-duration: .5s;
-  animation-name: bounceIn;
-  animation-duration: .5s;
 }
 
 /*-----------------------------------------
@@ -458,6 +449,7 @@ About
 
 #aboutSection {
   width: 50%;
+  min-width: 200px;
   margin: 0 auto;
 }
 
@@ -469,8 +461,7 @@ About
 
 #aboutDescription {
   margin: 0 auto;
-  width: 65%;
-  min-width: 250px;
+  /*width: 65%;*/
   font-size: 18pt;
   text-align: justify;
   color: rgba(106, 106, 106, 1);
@@ -580,11 +571,11 @@ Contact
 
 #contactContainer {
   background-color: rgba(255, 255, 255, 0.4);
-  width: 70%;
+  width: 80%;
+  min-width: 300px;
   margin: 0 auto;
   margin-top: 15%;
-  padding-top: 2%;
-  padding-bottom: 2%;
+  padding: 2%;
 }
 
 #contactInfo {
