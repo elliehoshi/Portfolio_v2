@@ -17,7 +17,6 @@ a {
 }
 
 .title {
-  font-family: 'Josefin Sans', sans-serif;
   color: rgba(106, 106, 106, 1);
 }
 
@@ -31,20 +30,17 @@ a {
 
 #skills {
   background-color: rgba(245,245,245,1);
-  font-family: 'Josefin Sans', sans-serif;
   color: rgba(106, 106, 106, 1);
   font-size: 4em;
 }
 
 #about {
   background-color: rgba(245,245,245,1);
-  font-family: 'Josefin Sans', sans-serif;
   color: rgba(106, 106, 106, 1);
   font-size: 4em;
 }
 
 .btn.btn-default {
-  font-family: 'Josefin Sans', sans-serif;
   background-color: rgba(122, 173, 173, 1);
   color: white;
   border: none;
@@ -90,7 +86,6 @@ header {
 }
 
 li {
-  font-family: 'Josefin Sans', sans-serif;
   font-size: 12pt;
 }
 
@@ -289,8 +284,7 @@ Home
 }
 
 #introDescription {
-  font-size: 3em;
-  font-family: 'Josefin Sans', sans-serif;
+  font-size: 1.5em;
   color: rgba(106, 106, 106, 1);
   position: relative;
 
@@ -298,19 +292,13 @@ Home
 
 #scroll {
   font-size: 1.5em;
-  font-family: 'Josefin Sans', sans-serif;
-  color: rgba(106, 106, 106, 1);
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
+  color: rgba(106, 106, 106, 1);  
 }
 
 /*-----------------------------------------
 Services
 -----------------------------------------*/
 #services {
-  font-family: 'Josefin Sans', sans-serif;
   color: rgba(106, 106, 106, 1);
   font-size: 4em;
   width: 100vw;
@@ -319,7 +307,6 @@ Services
   background-color: rgba(245,245,245,1);
   display: table;
   padding-top: 5%;
-  /*border: 5px solid blue;*/
 }
 
 #servicesContainer {
@@ -390,7 +377,6 @@ Portfolio
 
 .portfolio-title {
   display: none;
-  font-family: 'Josefin Sans', sans-serif;
 }
 
 .overlay {
@@ -433,32 +419,23 @@ Portfolio
 
 .portfolio-title {
   position: relative;
-  font-family: 'Josefin Sans', sans-serif;
 }
 
 .projTitle {
-  font-family: 'Josefin Sans', sans-serif;
   font-size: 16pt;
   text-align: left;
 }
 
-.portfolio-title h2 {
-  font-family: 'Josefin Sans', sans-serif;
-}
-
 .builtWith {
-  font-family: 'Josefin Sans', sans-serif;
   text-align: left;
 }
 
 .builtWith p {
   display: inline-block;
-  font-family: 'Josefin Sans', sans-serif;
   text-align: left;
 }
 
 .projDesc {
-  font-family: 'Josefin Sans', sans-serif;
   text-align: left;
 }
 
@@ -496,7 +473,6 @@ About
   min-width: 250px;
   font-size: 18pt;
   text-align: justify;
-  font-family: 'Josefin Sans', sans-serif;
   color: rgba(106, 106, 106, 1);
 }
 
@@ -583,8 +559,9 @@ Skills
 
 #resume {  
   margin: 0 auto;
-  padding-top: 10%;
   font-size: 18pt;
+  clear: both;
+  padding-top: 50px;
 }
 /*-----------------------------------------
 Contact
@@ -594,7 +571,6 @@ Contact
   background-image: url(../img/blue_mountains.png);
   background-size: cover;
   background-repeat: no-repeat;
-  font-family: 'Josefin Sans', sans-serif;
   color: black;
   font-size: 4em;
   width: 100vw;
@@ -612,18 +588,34 @@ Contact
 }
 
 #contactInfo {
-  width: 100%;
   margin: 0 auto;
   font-size: 18pt;
   overflow: auto;
-  /*text-align: left;*/
 }
 
-.socialIcons {
-  height: 25px;
-  width: 25px;
-  background-color: rgba(162, 213, 213, 1);
+.social-icons {
   display: inline-block;
+}
+
+.twitter {
+  background: url(../img/portfolio-spritesheet.png) no-repeat 0 0;
+  width: 36px;
+  height: 36px;
+  background-size: 300% 100%;
+}
+
+.linkedin {
+  background: url(../img/portfolio-spritesheet.png) no-repeat 50% 0;
+  width: 36px;
+  height: 36px;
+  background-size: 300% 100%;
+}
+
+.github {
+  background: url(../img/portfolio-spritesheet.png) no-repeat 100% 0;
+  width: 36px;
+  height: 36px;
+  background-size: 300% 100%;
 }
 
 footer {
