@@ -6,13 +6,13 @@ $(document).ready(function() {
   $(window).scroll(function(){
     var scrollTop = $('header').height();
     if($(window).scrollTop() >= scrollTop){
-      $('#nav').css({
+      $('#nav-container').css({
         position : 'fixed',
         top : '0'
       });
     }
     if($(window).scrollTop() < scrollTop){
-      $('#nav').removeAttr('style');  
+      $('#nav-container').removeAttr('style');  
     }
   })
 
@@ -114,12 +114,26 @@ $(document).ready(function() {
   });
 
   //Refresh Scrollspy
-  setTimeout(updateScrollSpy, 1000);
+  // setTimeout(updateScrollSpy, 1000);
 
-  function updateScrollSpy() {
-    $('[data-spy="scroll"]').each(function() {
-      var $spy = $(this).scrollspy('refresh')
-    });
-  }
+  // function updateScrollSpy() {
+  //   $('[data-spy="scroll"]').each(function() {
+  //     var $spy = $(this).scrollspy('refresh')
+  //   });
+  // }
 
 });
+
+
+
+$(document).ready(function() {
+  $('body').addClass('js');
+  var $nav = $('#nav'),
+    $menulink = $('.menu-link');
+  
+$menulink.click(function() {
+  console.log("clicked");
+  $menulink.toggleClass('active');
+  $nav.toggleClass('active');
+  return false;
+});});
