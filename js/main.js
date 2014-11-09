@@ -35,14 +35,6 @@ $(document).ready(function() {
     $('#movement3').css('top', amountMovedY);
   });
 
-  // Sticky Nav
-  // $('#nav').affix({
-  //     offset: {
-  //       top: $('header').height()
-  //     }
-  // }); 
-  // console.log("inside");
-
   // For Portfolio Lightbox
   $(".fancybox").fancybox();
 
@@ -112,15 +104,6 @@ $(document).ready(function() {
       window.location.hash = hash;
     });
   });
-
-  //Refresh Scrollspy
-  // setTimeout(updateScrollSpy, 1000);
-
-  // function updateScrollSpy() {
-  //   $('[data-spy="scroll"]').each(function() {
-  //     var $spy = $(this).scrollspy('refresh')
-  //   });
-  // }
 
 });
 
