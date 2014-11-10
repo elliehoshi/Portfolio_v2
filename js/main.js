@@ -3,12 +3,14 @@
 // ------------------------------------------
 $(document).ready(function() {
 
+  // Affix nav
   $(window).scroll(function(){
     var scrollTop = $('header').height();
     if($(window).scrollTop() >= scrollTop){
       $('#nav-container').css({
-        position : 'fixed',
-        top : '0'
+        visibility: 'visible',
+        position: 'fixed',
+        top: '0'
       });
     }
     if($(window).scrollTop() < scrollTop){
