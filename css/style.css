@@ -25,26 +25,11 @@ a:hover {
 .title {
   color: rgba(106, 106, 106, 1);
   font-size: 2em;
+  display: block;
+  font-weight: 300;
 }
 
-.spacer {
-  background-color: rgba(162, 213, 213, 1);
-  height: 2px;
-  width: 60px;
-  margin: 0 auto;
-  margin-bottom: 2%;
-  margin-top: 10px;
-}
-
-#skills {
-  background-color: rgba(245,245,245,1);
-}
-
-#about {
-  background-color: rgba(245,245,245,1);
-}
-
-.btn.btn-default {
+.btn-default {
   background-color: rgba(122, 173, 173, 1);
   color: white;
   border: none;
@@ -52,23 +37,17 @@ a:hover {
   height: 50px;
   border-radius: 5px;
   margin: 0 auto;
-  padding-top: 15px;
   margin-top: 10px;
   margin-bottom: 10px;
 }
 
-.btn.btn-default > a {
+.btn-default > a {
   color: white;
 }
 
-.btn.btn-default:hover {
+.btn-default:hover {
   background-color: rgba(162, 213, 213, 1);
   cursor: pointer;
-}
-
-header {
-  height:280px;
-  background-color:#eee;
 }
 
 /*-----------------------------------------
@@ -358,9 +337,11 @@ Home
 #scroll {
   font-size: 1.5em;
   color: rgba(106, 106, 106, 1);  
-  position: absolute;
-  bottom: 50px;
-  left: 50%;
+  /*position: absolute;*/
+  /*bottom: 50px;*/
+  /*left: 50%;*/
+  position: relative;
+  margin-top: 20%;
 }
 
 /*-----------------------------------------
@@ -398,19 +379,11 @@ Portfolio
 
 #works {
   color: rgba(236, 236, 236, 1);
-  width: 100vw;
-  height: 100vh;
+  min-width: 100vw;
+  width: 100%;
+  height: auto;
   background-color: rgba(35,35,35,1);
-  border-top: 2px dotted rgba(205,205,205,1);
-  border-bottom: 2px dotted rgba(205,205,205,1);
   display: table;
-  padding-top: 7%;
-  padding-bottom: 100px;
-}
-
-#portfolioContainer {
-  width: 75%;
-  margin: 0 auto;
 }
 
 #portfolioContainer a {
@@ -419,23 +392,18 @@ Portfolio
   border: none;
 }
 
-.portfolio-title {
-  display: none;
-}
-
 .overlay {
   position: relative;
-  width: 250px;
-  height: 250px;
+  /*width: 250px;*/
+  /*height: 250px;*/
   margin: 0 auto;
   display: inline-block;
-  margin-bottom: 1%;
   font-size: 19pt;
 }
 
 .overlay img {
-  width: 250px;
-  height: 250px;
+  width: 100%;
+  height: 100%;
 }
 
 .overlay:after {
@@ -445,8 +413,8 @@ Portfolio
   font-size: 2em;
   position: absolute;
   padding-top: 100px;
-  width: 250px;
-  height: 250px;
+  width: 100%;
+  height: 100%;
   top: 0;
   left: 0;
   background-image: url(../img/search.svg);
@@ -461,32 +429,6 @@ Portfolio
   opacity: 1;
 }
 
-.portfolio-title {
-  position: relative;
-}
-
-.projTitle {
-  font-size: 16pt;
-  text-align: left;
-}
-
-.builtWith {
-  text-align: left;
-}
-
-.builtWith p {
-  display: inline-block;
-  text-align: left;
-}
-
-.projDesc {
-  text-align: left;
-}
-
-a.hiddenPortfolioImg {
-  display: none;
-}
-
 /*-----------------------------------------
 About
 -----------------------------------------*/
@@ -496,8 +438,7 @@ About
   clear: both;
   padding-top: 5%;
   display: table;
-  background-color: rgba(205,205,205,1);
-  border-bottom: 2px dotted rgba(205,205,205,1);
+  background-color: rgba(245,245,245,1);
   position: relative;
   padding-top: 50px;
 }
@@ -513,9 +454,6 @@ About
   width: 200px;
   border-radius: 50%;
   overflow: hidden;
-  /*position: absolute;*/
-  top: -100px;
-  /*left: 43vw;*/
 }
 
 #aboutDescription {
@@ -531,9 +469,25 @@ Skills
 -----------------------------------------*/
 #skills {
   width: 100vw;
-  height: 100vh;
+  height: auto;
   padding-top: 5%;
+  padding-bottom: 5%;
   display: table;
+  background-color: rgba(245,245,245,1);
+
+  position: relative;
+  
+  background: -webkit-linear-gradient(90deg, #16222A 10%, #3A6073 90%); /* Chrome 10+, Saf5.1+ */
+  background:    -moz-linear-gradient(90deg, #16222A 10%, #3A6073 90%); /* FF3.6+ */
+  background:     -ms-linear-gradient(90deg, #16222A 10%, #3A6073 90%); /* IE10 */
+  background:      -o-linear-gradient(90deg, #16222A 10%, #3A6073 90%); /* Opera 11.10+ */
+  background:         linear-gradient(90deg, #16222A 10%, #3A6073 90%); /* W3C */
+               
+  background-size: 150% 100%;
+  color: white;
+  padding-top: 5%;
+  -webkit-animation: animateGradient 3s alternate infinite;
+  animation: animateGradient 3s alternate infinite;
 }
 
 #skillSection {
@@ -552,9 +506,9 @@ Skills
 
 #resume {  
   margin: 0 auto;
-  font-size: 18pt;
+  font-size: 14pt;
   clear: both;
-  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 /*-----------------------------------------
@@ -562,23 +516,17 @@ Contact
 -----------------------------------------*/
 #contact {
   position: relative;
-  background: -webkit-linear-gradient(90deg, #003973 10%, #E5E5BE 90%);
-  background:    -moz-linear-gradient(90deg, #003973 10%, #E5E5BE 90%);
-  background:     -ms-linear-gradient(90deg, #003973 10%, #E5E5BE 90%);
-  background:      -o-linear-gradient(90deg, #003973 10%, #E5E5BE 90%);
-  background:         linear-gradient(90deg, #003973 10%, #E5E5BE 90%);        
-  background-size: 150% 100%;
-  color: black;
-  width: 100wv;
-  height: 100vh;
+  width: 100vw;
+  height: auto;
   padding-top: 5%;
-  -webkit-animation: animateGradient 3s alternate infinite;
-  animation: animateGradient 3s alternate infinite;
+  padding-bottom: 5%;
+  display: table;
+  background-color: rgba(245,245,245,1);
 }
 
 
 @keyframes animateGradient {
-    0%{
+  0%{
     background-position: 0%;
   }
   
@@ -599,18 +547,16 @@ Contact
 /*end*/
 
 #contactContainer {
-  /*background-color: rgba(255, 255, 255, 0.4);*/
   width: 80%;
   min-width: 300px;
   margin: 0 auto;
-  margin-top: 15%;
   padding: 2%;
 }
 
 #contactInfo {
   margin: 0 auto;
   font-size: 18pt;
-  overflow: auto;
+  overflow: hidden;
 }
 
 .social-icons {
@@ -643,7 +589,6 @@ footer {
   bottom: 10px;
   font-size: 11pt;
   text-align: left;
-  color: rgba(245, 245, 245, 0.7);
   font-weight: 100;
   padding: 10px;
 }
@@ -659,6 +604,11 @@ Grid
 .thirds {
   float: left;
   width: 33.3%;
+}
+
+.half {
+  float: left;
+  width: 50%;
 }
 
 /*-----------------------------------------
@@ -756,6 +706,10 @@ Breakpoints
     float: left;
     width: 100%;
     margin-bottom: 20px;
+  }
+
+  #scroll {
+    margin-top: 200px;
   }
 }
 

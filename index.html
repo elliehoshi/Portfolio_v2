@@ -9,21 +9,15 @@
   <link href='http://fonts.googleapis.com/css?family=Roboto:100,300' rel='stylesheet' type='text/css'>
   <link rel="icon" type="image/png" href="img/favicon.ico">
   <link rel="stylesheet" type="text/css" href="css/normalize.css">
-  <link rel="stylesheet" type="text/css" href="../source/jquery.fancybox.css?v=2.1.5" media="screen" />
-  <link rel="stylesheet" type="text/css" href="../source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" />
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
   <script type="text/javascript" src="js/main.js"></script>
-  <script type="text/javascript" src="../source/jquery.fancybox.js?v=2.1.5"></script>
-  <script type="text/javascript" src="js/jquery.fancybox.pack.js"></script>
-  <script type="text/javascript" src="helpers/jquery.mousewheel-3.0.6.pack.js"></script>
-  <script type="text/javascript" src="../source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
   <title>Ellie Hoshizaki | Web Developer & Designer</title>
 </head>
 
 <body>
 
-  <header class="home">
+  <div class="home">
     <div id="blackBackdrop">
       <div class="bounceIn" id="introText">  
         <div id="introName">
@@ -43,9 +37,9 @@
       <div id="movement3">
       </div>       
     </div>
-  </header>
+  </div>
 
-  <!-- Begin Navbar -->
+  <!-- Navbar -->
   <div id="nav-container">
     <a href="#nav" class="menu-link">Menu</a>
     <nav id="nav">
@@ -62,7 +56,6 @@
 
   <div id="services">
     <span class="title">what i love to do</span>
-    <div class="spacer"></div>
     <div class="row" id="servicesContainer">
       <div class="mobile-whole small-thirds medium-thirds large-thirds">
         <div class="servicesIcon">
@@ -85,196 +78,64 @@
     </div>
   </div>
 
+
   <div id="works">
-    <span class="title">works</span>
-    <div class="spacer"></div>
-      
-    <div id="portfolioContainer">  
 
-      <a class="caption" href="img/peek1.jpg" data-title-id="Peek-Title">
-        <div class="overlay" data-content="Peek">
-          <img src="img/peek1.jpg"/>
-        </div>
-      </a>
-        
-      <div id="Peek-Title" class="portfolio-title">
-        <div class="projTitle">Peek - Web App</div>
-        <div class="projDesc">
-        Speed read NPR stories through Peek.
-        </div>
-        <div class="builtWith">
-          <strong>Built with:</strong>
-          <p>MongoDB | </p>
-          <p>Express.js | </p>
-          <p>Angular.js | </p>
-          <p>Node.js | </p>
-          <p>jQuery | </p>
-          <p>JavaScript</p>
-        </div>
-        <a href='http://peekachu.herokuapp.com' target='_blank'>View Full Site</a>
-      </div>
-
-      <a class="caption" href="img/StyleLust1.jpg" data-title-id="StyleLust-Title" data-fancybox-group="gallery2">
-        <div class="overlay" data-content="StyleLust">
-          <img src="img/StyleLust1.jpg"/>
+      <a href="img/peek1.jpg" data-title-id="Peek-Title">
+        <div class="overlay large-quarters medium-thirds small-half mobile-whole" data-content="Peek">
+          <img src="img/peek1.jpg" class="large-quarters medium-thirds small-half mobile-whole"/>
         </div>
       </a>
 
-      <div id="StyleLust-Title" class="portfolio-title">
-        <div class="projTitle">StyleLust - eCommerce Web App</div>
-        <div class="projDesc">
-        Discover new fashion styles and trends from the hottest brands. Buy your favorite items from hundreds of brands in one location.
-        </div>
-        <div class="builtWith">
-          <strong>Built with:</strong>
-          <p>Ruby on Rails | </p>
-          <p>PostgreSQL | </p>
-          <p>jQuery | </p>
-          <p>JavaScript | </p>
-          <p>Zurb Foundation</p>
-        </div>
-        <a href='http://stylelust.herokuapp.com' target='_blank'>View Full Site</a>
-      </div>
-
-      <a class="caption pillstagram" href="img/Pillstagram1.png" data-title-id="Pillstagram-Title" data-fancybox-group="pillstagramGallery">
-        <div class="overlay" data-content="Pillstagram">
-          <img src="img/Pillstagram1.png"/>
+      <a class="caption" href="img/StyleLust1.jpg" data-title-id="StyleLust-Title">
+        <div class="overlay large-quarters medium-thirds small-half mobile-whole" data-content="StyleLust">
+          <img src="img/StyleLust1.jpg" class=" large-quarters medium-thirds small-half mobile-whole"/>
         </div>
       </a>
 
-        <a class="hiddenPortfolioImg caption" href="img/pillstagram2.png" data-title-id="Pillstagram-Title" data-fancybox-group="pillstagramGallery"><img src="img/pillstagram2.png"/></a>
-
-        <a class="hiddenPortfolioImg caption" href="img/pillstagram3.png" data-title-id="Pillstagram-Title" data-fancybox-group="pillstagramGallery"><img src="img/pillstagram3.png"/></a>
-
-        <a class="hiddenPortfolioImg caption" href="img/pillstagram4.png" data-title-id="Pillstagram-Title" data-fancybox-group="pillstagramGallery"><img src="img/pillstagram4.png"/></a>
-
-        <a class="hiddenPortfolioImg caption" href="img/pillstagram5.png" data-title-id="Pillstagram-Title" data-fancybox-group="pillstagramGallery"><img src="img/pillstagram5.png"/></a>
-
-        <a class="hiddenPortfolioImg caption" href="img/pillstagram6.png" data-title-id="Pillstagram-Title" data-fancybox-group="pillstagramGallery"><img src="img/pillstagram6.png"/></a>
-
-      <div id="Pillstagram-Title" class="portfolio-title">
-        <div class="projTitle">Pillstagram - UX Deck for Mobile Medical App</div>
-        <div class="projDesc">
-        Snap a photo of your medications with your phone. Automatically identify and organize your medications in seconds.
-        </div>
-        <div class="builtWith">
-          <strong>Built with:</strong>
-          <p>Axure | </p>
-          <p>Adobe Photoshop | </p>
-          <p>Adobe Illustrator | </p>
-          <p>Adobe InDesign</p>
-        </div>
-      </div>
-      
-      <a class="caption" href="img/muselab.png" data-title-id="MuseLab-Title" data-fancybox-group="gallery5">
-        <div class="overlay" data-content="MuseLab">
-          <img src="img/muselab.png"/>
+      <a class="caption pillstagram" href="img/Pillstagram1.png" data-title-id="Pillstagram-Title">
+        <div class="overlay large-quarters medium-thirds small-half mobile-whole" data-content="Pillstagram">
+          <img src="img/Pillstagram1.png" class="large-quarters medium-thirds small-half mobile-whole"/>
         </div>
       </a>
       
-      <div id="MuseLab-Title" class="portfolio-title">
-          <div class="projTitle">MuseLab - Web App</div>
-          <div class="projDesc">
-          Where user needs inspire creators.
-          </div>
-          <div class="builtWith">
-            <strong>Built with:</strong>
-            <p>MongoDB | </p>
-            <p>Ruby on Rails | </p>
-            <p>D3.js | </p>
-            <p>JavaScript</p>
-          </div>
-          <a href='http://muselab.herokuapp.com' target='_blank'>View Full Site</a>
-      </div>
-
-      <a class="caption" href="img/inBetween.png" data-title-id="inBetween-Title" data-fancybox-group="gallery4">
-        <div class="overlay" data-content="inBetween">
-          <img src="img/inBetween.png"/>
+      <a class="caption" href="img/muselab.png" data-title-id="MuseLab-Title">
+        <div class="overlay large-quarters medium-thirds small-half mobile-whole" data-content="MuseLab">
+          <img src="img/muselab.png" class=" large-quarters medium-thirds small-half mobile-whole"/>
         </div>
       </a>
 
-      <div id="inBetween-Title" class="portfolio-title">
-        <div class="projTitle">inBetween - Mobile App</div>
-        <div class="projDesc">
-        Snap a photo of your medications with your phone. Automatically identify and organize your medications in seconds.
+      <a class="caption" href="img/inBetween.png" data-title-id="inBetween-Title">
+        <div class="overlay large-quarters medium-thirds small-half mobile-whole" data-content="inBetween">
+          <img src="img/inBetween.png" class=" large-quarters medium-thirds small-half mobile-whole"/>
         </div>
-        <div class="builtWith">
-          <strong>Built with:</strong>
-          <p>Axure | </p>
-          <p>Adobe Photoshop | </p>
-          <p>Adobe Illustrator | </p>
-          <p>Adobe InDesign</p>
+      </a>
+
+      <a class="caption" href="img/GoldGhostSquare.jpg" data-title-id="GoldGhost-Title">
+        <div class="overlay large-quarters medium-thirds small-half mobile-whole" data-content="Gold Ghost">
+          <img src="img/GoldGhostSquare.jpg" class="large-quarters medium-thirds small-half mobile-whole"/>
         </div>
-      </div>
+      </a>
 
-        <a class="caption" href="img/GoldGhostSquare.jpg" data-title-id="GoldGhost-Title" data-fancybox-group="gallery6">
-          <div class="overlay" data-content="Gold Ghost">
-            <img src="img/GoldGhostSquare.jpg"/>
-          </div>
-        </a>
-
-        <a class="hiddenPortfolioImg caption" href="img/GoldGhostExperienceMap.jpg" data-title-id="GoldGhost-Title" data-fancybox-group="gallery6"><img src="img/GoldGhostExperienceMap.jpg"/></a>
-
-        <div id="GoldGhost-Title" class="portfolio-title">
-          <div class="projTitle">Gold Ghost Studio - UX Deck for eCommerce App</div>
-          <div class="projDesc">
-          Hand Silkscreened Prints from LA Designers.
-          </div>
-          <div class="builtWith">
-            <strong>Built with:</strong>
-            <p>Balsamiq | </p>
-            <p>Omnigraffle | </p>
-            <p>Adobe inDesign | </p>
-            <p>Adobe Photoshop</p>
-          </div>
+      <a class="caption" href="img/GeoSpec.jpg" data-title-id="GeoSpec-Title">
+        <div class="overlay large-quarters medium-thirds small-half mobile-whole" data-content="GeoSpec">
+          <img src="img/GeoSpec.jpg" class=" large-quarters medium-thirds small-half mobile-whole"/>
         </div>
+      </a>
 
-        <a class="caption" href="img/GeoSpec.jpg" data-title-id="GeoSpec-Title" data-fancybox-group="gallery7">
-          <div class="overlay" data-content="GeoSpec">
-            <img src="img/GeoSpec.jpg"/>
-          </div>
-        </a>
-
-        <div id="GeoSpec-Title" class="portfolio-title">
-          <div class="projTitle">Geometric Speciation - 3D Data Visualization</div>
-          <div class="projDesc">
-          An exploration of translations between existing drawings and their re-constructed digital and physical equivalents.
-          </div>
-          <div class="builtWith">
-            <strong>Built with:</strong>
-            <p>Rhinoceros 3D | </p>
-            <p>Adobe Photoshop | </p>
-            <p>Adobe Illustrator</p>
-          </div>
+      <a class="caption" href="img/houseicon.gif" data-title-id="House-Title">
+        <div class="overlay large-quarters medium-thirds small-half mobile-whole" data-content="House">
+          <img src="img/houseicon.gif" class=" large-quarters medium-thirds small-half mobile-whole"/>
         </div>
-
-        <a class="caption" href="img/houseicon.gif" data-title-id="House-Title" data-fancybox-group="gallery8">
-          <div class="overlay" data-content="House">
-            <img src="img/houseicon.gif"/>
-          </div>
-        </a>
-
-        <div id="House-Title" class="portfolio-title">
-          <div class="projTitle">Shattered House - 3D Data Visualization</div>
-          <div class="projDesc">
-          An exploration of translations between existing drawings and their re-constructed digital and physical equivalents.
-          </div>
-          <div class="builtWith">
-            <strong>Built with:</strong>
-            <p>Rhinoceros 3D | </p>
-            <p>Adobe Photoshop | </p>
-            <p>Adobe Illustrator</p>
-          </div>
-        </div>
-
-    </div>
+      </a>
   </div>
 
+
+
   <div id="about">
-    <span class="title">about</span>
+    <span class="title">about me</span>
     <div class="spacer"></div>
     <div id="aboutSection">
-      <img src="img/elenaphotocrop.jpg" id="aboutImage"></img>
       <div id="aboutDescription">
         Hi!
         <br><br>
@@ -284,12 +145,22 @@
       </div>
     </div>
 
+    
+    <div id="resume">
+      Want to know more?<br>
+      <a href="http://elliehoshizaki.com/img/EH_R%C3%A9sum%C3%A9.pdf" target='_blank'>
+        <button class="btn-default">
+          View Résumé
+        </button>
+      </a>
+    </div>
+
   </div>
 
   <div id="skills">
-    <span class="title">skills</span>
-    <div class="spacer"></div>
-    <div class="row" id="skillSection">
+    <img src="img/elenaphotocrop.jpg" id="aboutImage"></img>
+    <span class="title">my skillset</span>
+    <div id="skillSection">
       <div class="mobile-whole small-thirds medium-thirds large-thirds">
         <p class="skillTitle">
           JavaScript
@@ -343,20 +214,12 @@
           Omnigraffle
         </p>
       </div>
-
-      <div id="resume">
-        Want to know more?<br>
-        <div class="btn btn-default">
-          <a href="http://elliehoshizaki.com/img/EH_R%C3%A9sum%C3%A9.pdf" target='_blank'>View Résumé</a>
-        </div>
-      </div>
     </div>
   </div>
 
   <div id="contact">
     <div id="contactContainer">
-      <span class="title">contact</span>
-      <div class="spacer"></div>
+      <span class="title">contact</span>      
       <div class="row" id="contactInfo">
         <div class="mobile-whole small-thirds medium-thirds large-thirds">
           Ellie Hoshizaki
@@ -389,7 +252,7 @@
       </div>
     </div>
     <footer>
-      &copy; 2014 Ellie Hoshizaki.
+      &copy; 2014 Designed and built by Ellie Hoshizaki.
     </footer>
   </div>
 
